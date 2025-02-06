@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: welfdapp-storybook-deployment
+  namespace: welfdapp-storybook
+  labels:
+    app: welfdapp-storybook
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: welfdapp-storybook
+  template:
+    metadata:
+      labels:
+        app: welfdapp-storybook
+    spec:
+      containers:
+        - name: welfdapp-storybook
+          image: europe-west1-docker.pkg.dev/creditsystem/welf/welfdapp-storybook:5fc66c5-20250122
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: 50Mi
+              cpu: '1'
+            requests:
+              memory: 50Mi
+              cpu: 50m
+          ports:
+            - containerPort: 80

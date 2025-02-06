@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: welfdapp-storybook-ingress
+  namespace: welfdapp-storybook
+  annotations:
+    kubernetes.io/ingress.class: gce
+spec:
+  defaultBackend:
+    service:
+      name: welfdapp-storybook-service
+      port:
+        number: 80
