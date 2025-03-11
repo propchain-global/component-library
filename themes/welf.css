@@ -1,797 +1,709 @@
+:root {
+  /* Primary Lime */
+  --primary-lime-100: #081207;
+  --primary-lime-90: #11240d;
+  --primary-lime-80: #22481a;
+  --primary-lime-70: #326b28;
+  --primary-lime-60: #438f35;
+  --primary-lime-base: #54b342;
+  --primary-lime-50: #76c268;
+  --primary-lime-40: #98d18e;
+  --primary-lime-30: #bbe1b3;
+  --primary-lime-20: #ddf0d9;
+  --primary-lime-10: #eef7ec;
+  --primary-lime-overlay-50: rgba(84, 179, 66, 0.5);
+  --primary-lime-overlay-24: rgba(84, 179, 66, 0.24);
+  --primary-lime-overlay-12: rgba(84, 179, 66, 0.12);
+  --primary-lime-overlay-4: rgba(84, 179, 66, 0.04);
 
-   :root {
-      /* Primary Lime */
-      --primary-lime-100: #081207;
-      --primary-lime-90: #11240d;
-      --primary-lime-80: #22481a;
-      --primary-lime-70: #326b28;
-      --primary-lime-60: #438f35;
-      --primary-lime-base: #54b342;
-      --primary-lime-50: #76c268;
-      --primary-lime-40: #98d18e;
-      --primary-lime-30: #bbe1b3;
-      --primary-lime-20: #ddf0d9;
-      --primary-lime-10: #eef7ec;
-      --primary-lime-overlay-50: rgba(84, 179, 66, 0.5);
-      --primary-lime-overlay-24: rgba(84, 179, 66, 0.24);
-      --primary-lime-overlay-12: rgba(84, 179, 66, 0.12);
-      --primary-lime-overlay-4: rgba(84, 179, 66, 0.04);
-    
-      /* Primary Orange */
-      --primary-orange-100: #332601;
-      --primary-orange-90: #553f02;
-      --primary-orange-80: #805f03;
-      --primary-orange-70: #aa7f04;
-      --primary-orange-60: #d59e05;
-      --primary-orange-base: #ffbe06;
-      --primary-orange-50: #ffc92f;
-      --primary-orange-40: #ffd459;
-      --primary-orange-30: #ffdf83;
-      --primary-orange-20: #ffe9ac;
-      --primary-orange-10: #fff2cd;
-      --primary-orange-overlay-50: rgba(255, 242, 205, 0.5);
-      --primary-orange-overlay-24: rgba(255, 212, 89, 0.24);
-      --primary-orange-overlay-12: rgba(255, 212, 89, 0.12);
-      --primary-orange-overlay-4: rgba(255, 212, 89, 0.04);
-    
-      /* Secondary Teal */
-      --secondary-teal-100: #040908;
-      --secondary-teal-90: #081210;
-      --secondary-teal-80: #102320;
-      --secondary-teal-70: #193531;
-      --secondary-teal-60: #214641;
-      --secondary-teal-base: #295851;
-      --secondary-teal-50: #48746d;
-      --secondary-teal-40: #67908a;
-      --secondary-teal-30: #87aca6;
-      --secondary-teal-20: #a6c8c3;
-      --secondary-teal-10: #b5d6d1;
-      --secondary-teal-overlay-50: rgba(41, 88, 81, 0.5);
-      --secondary-teal-overlay-24: rgba(41, 88, 81, 0.24);
-      --secondary-teal-overlay-12: rgba(41, 88, 81, 0.12);
-      --secondary-teal-overlay-4: rgba(41, 88, 81, 0.04);
-    
-      /* Neutral Grey */
-      --neutral-grey-100: #131414;
-      --neutral-grey-90: #222423;
-      --neutral-grey-80: #3e4241;
-      --neutral-grey-70: #5b615f;
-      --neutral-grey-60: #777f7d;
-      --neutral-grey-base: #949e9b;
-      --neutral-grey-50: #a9b1af;
-      --neutral-grey-40: #bfc5c3;
-      --neutral-grey-30: #d4d8d7;
-      --neutral-grey-20: #eaeceb;
-      --neutral-grey-10: #f4f5f5;
-    
-      /* Neutral Colors */
-      --white-100: #ffffff;
-      --white-80: rgba(255, 255, 255, 0.8);
-      --white-50: rgba(255, 255, 255, 0.5);
-      --white-28: rgba(255, 255, 255, 0.28);
-      --white-16: rgba(255, 255, 255, 0.16);
-      --white-4: rgba(255, 255, 255, 0.04);
-      --white-none: rgba(255, 255, 255, 0);
-    
-      --black-100: #000000;
-      --black-80: rgba(0, 0, 0, 0.8);
-      --black-50: rgba(0, 0, 0, 0.5);
-      --black-28: rgba(0, 0, 0, 0.28);
-      --black-16: rgba(0, 0, 0, 0.16);
-      --black-4: rgba(0, 0, 0, 0.04);
-      --black-none: rgba(0, 0, 0, 0);
-    
-      /* System Colors */
-      /* Yellow */
-      --system-yellow-100: #332803;
-      --system-yellow-90: #554205;
-      --system-yellow-80: #806408;
-      --system-yellow-70: #aa850a;
-      --system-yellow-60: #d5a60d;
-      --system-yellow-base: #ffc70f;
-      --system-yellow-50: #ffd037;
-      --system-yellow-40: #ffda5f;
-      --system-yellow-30: #ffe387;
-      --system-yellow-20: #ffecaf;
-      --system-yellow-10: #fff4cf;
-      --system-yellow-overlay-50: rgba(255, 199, 15, 0.5);
-      --system-yellow-overlay-24: rgba(255, 199, 15, 0.24);
-      --system-yellow-overlay-12: rgba(255, 199, 15, 0.12);
-      --system-yellow-overlay-4: rgba(255, 199, 15, 0.04);
-    
-      /* Red */
-      --system-red-100: #330e0e;
-      --system-red-90: #551717;
-      --system-red-80: #802323;
-      --system-red-70: #aa2e2e;
-      --system-red-60: #d53a3a;
-      --system-red-base: #ff4545;
-      --system-red-50: #ff6464;
-      --system-red-40: #ff8383;
-      --system-red-30: #ffa2a2;
-      --system-red-20: #ffc1c1;
-      --system-red-10: #ffdada;
-      --system-red-overlay-50: rgba(255, 69, 69, 0.5);
-      --system-red-overlay-24: rgba(255, 69, 69, 0.24);
-      --system-red-overlay-12: rgba(255, 69, 69, 0.12);
-      --system-red-overlay-4: rgba(255, 69, 69, 0.04);
-    
-      /* Green */
-      --system-green-100: #002418;
-      --system-green-90: #003d29;
-      --system-green-80: #005b3d;
-      --system-green-70: #007951;
-      --system-green-60: #009866;
-      --system-green-base: #00b67a;
-      --system-green-50: #2ac290;
-      --system-green-40: #55cea6;
-      --system-green-30: #80dbbd;
-      --system-green-20: #aae7d3;
-      --system-green-10: #ccf0e4;
-      --system-green-overlay-50: rgba(0, 182, 122, 0.5);
-      --system-green-overlay-24: rgba(0, 182, 122, 0.24);
-      --system-green-overlay-12: rgba(0, 182, 122, 0.12);
-      --system-green-overlay-4: rgba(0, 182, 122, 0.04);
-    
-      /* Semantic Colors */
-      --accent-default: var(--primary-lime-base);
-      --accent-strong: var(--primary-lime-60);
-      --accent-stronger: var(--primary-lime-70);
-      --accent-on-white: var(--primary-lime-80);
-      --accent-on-surface: var(--primary-lime-90);
-    
-      --foreground-default: var(--secondary-teal-70);
-      --foreground-on-accent: var(--secondary-teal-80);
-      --foreground-weak: var(--secondary-teal-base);
-      --foreground-weaker: var(--secondary-teal-50);
-      --foreground-weakest: var(--secondary-teal-30);
-      --foreground-inverse: var(--white-100);
-      --foreground-white: var(--white-100);
-      --foreground-success: var(--system-green-60);
-      --foreground-success-on-surface: var(--system-green-80);
-      --foreground-warning: var(--system-yellow-60);
-      --foreground-warning-on-surface: var(--system-yellow-80);
-      --foreground-error: var(--system-red-60);
-      --foreground-error-on-surface: var(--system-red-80);
-      --foreground-link: var(--primary-lime-80);
-    
-      --border-none: var(--white-none);
-      --border-default: var(--neutral-grey-base);
-      --border-white: var(--white-100);
-      --border-strong: var(--neutral-grey-40);
-      --border-strongest: var(--secondary-teal-40);
-      --border-accent: var(--primary-lime-base);
-    
-      --surface-accent: var(--primary-lime-overlay-50);
-      --surface-default: var(--neutral-grey-20);
-      --surface-disabled: var(--neutral-grey-40);
-      --surface-success: var(--system-green-overlay-50);
-      --surface-warning: var(--system-yellow-overlay-50);
-      --surface-error: var(--system-red-overlay-50);
-      --surface-overlay: var(--secondary-teal-overlay-50);
-      --surface-overlay-white-50: var(--white-50);
-      --surface-overlay-white-28: var(--white-28);
-    
-      --background-default: var(--white-100);
-      --background-weakest: var(--neutral-grey-30);
-      --background-weaker: var(--neutral-grey-40);
-      --background-weak: var(--neutral-grey-50);
-      --background-darks: var(--secondary-teal-base);
-      --background-inverted: var(--secondary-teal-base);
-      --background-white: var(--white-100);
-      --background-primary: var(--primary-lime-20);
-      --background-none: var(--white-none);
-    
-      --shadow-accent-default: var(--primary-lime-overlay-12);
-      --shadow-accent-weak: var(--primary-lime-overlay-4);
-      --shadow-secondary-default: var(--secondary-teal-overlay-12);
-      --shadow-secondary-weak: var(--secondary-teal-overlay-4);
-      --shadow-text-inner: var(--secondary-teal-overlay-12);
-    
-    
-      /* Pills/Badges - Primary */
-      --pill-primary-information: var(--primary-lime-base);
-      --pill-primary-warning: var(--system-yellow-60);
-      --pill-primary-success: var(--system-green-60);
-      --pill-primary-error: var(--system-red-60);
-      --pill-primary-neutral: var(--black-100);
-    
-      /* Pills/Badges - Secondary */
-      --pill-secondary-information: var(--primary-lime-overlay-24);
-      --pill-secondary-warning: var(--system-yellow-overlay-24);
-      --pill-secondary-success: var(--system-green-overlay-24);
-      --pill-secondary-error: var(--system-red-overlay-24);
-      --pill-secondary-neutral: var(--black-16);
-    
-      /* Pills/Badges - Text */
-      --pill-text-information: var(--black-100);
-      --pill-text-warning: var(--white-100);
-      --pill-text-success: var(--white-100);
-      --pill-text-error: var(--white-100);
-      --pill-text-neutral: var(--white-100);
-    
-      /* Pills/Badges - Text Secondary */
-      --pill-text-secondary-information: var(--primary-lime-70);
-      --pill-text-secondary-warning: var(--system-yellow-70);
-      --pill-text-secondary-success: var(--system-green-70);
-      --pill-text-secondary-error: var(--system-red-70);
-      --pill-text-secondary-neutral: var(--black-100);
-    
-      /* Pills/Badges - Icon Primary */
-      --pill-icon-primary-information: var(--black-100);
-      --pill-icon-primary-warning: var(--white-100);
-      --pill-icon-primary-success: var(--white-100);
-      --pill-icon-primary-error: var(--white-100);
-      --pill-icon-primary-neutral: var(--white-100);
-    
-      /* Pills/Badges - Icon Secondary */
-      --pill-icon-secondary-information: var(--primary-lime-70);
-      --pill-icon-secondary-warning: var(--system-yellow-70);
-      --pill-icon-secondary-success: var(--system-green-70);
-      --pill-icon-secondary-error: var(--system-red-70);
-      --pill-icon-secondary-neutral: var(--white-100);
-      /* Alert - Background */
-      --alert-bg-information: var(--primary-lime-overlay-24);
-      --alert-bg-warning: var(--primary-orange-overlay-24);
-      --alert-bg-success: var(--system-green-overlay-24);
-      --alert-bg-error: var(--system-red-overlay-24);
-      --alert-bg-neutral: var(--black-28);
-    
-      /* Alert - Border */
-      --alert-border-information: var(--primary-lime-70);
-      --alert-border-warning: var(--system-yellow-70);
-      --alert-border-success: var(--system-green-70);
-      --alert-border-error: var(--system-red-70);
-      --alert-border-neutral: var(--black-100);
-    
-      /* Alert - Text */
-      --alert-text-information: var(--primary-lime-70);
-      --alert-text-warning: var(--system-yellow-70);
-      --alert-text-success: var(--system-green-70);
-      --alert-text-error: var(--system-red-70);
-      --alert-text-neutral: var(--black-100);
-      --alert-supporting-text: var(--black-100);
-    
-    
-      /* Alert - Icon */
-      --alert-icon-information: var(--primary-lime-70);
-      --alert-icon-warning: var(--system-yellow-70);
-      --alert-icon-success: var(--system-green-70);
-      --alert-icon-error: var(--system-red-70);
-      --alert-icon-neutral: var(--black-100);
-      --alert-close-icon: var(--black-100);
-      
-      /* Button - Accent Variant */
-      --button-accent-text-disabled: var(--surface-disabled);
-      --button-accent-text-active: var(--foreground-on-accent);
-      --button-accent-text-hover: var(--foreground-on-accent);
-      --button-accent-text-default: var(--foreground-on-accent);
-    
-      --button-accent-bg-disabled: var(--border-default);
-      --button-accent-bg-active: var(--accent-strong);
-      --button-accent-bg-hover: var(--accent-strong);
-      --button-accent-bg-default: var(--accent-default);
-    
-      --button-accent-border-disabled: var(--border-none);
-      --button-accent-border-active: var(--border-none);
-      --button-accent-border-hover: var(--border-none);
-      --button-accent-border-default: var(--border-none);
-    
-      /* Button - White Variant */
-      --button-white-text-disabled: var(--surface-disabled);
-      --button-white-text-active: var(--foreground-on-accent);
-      --button-white-text-hover: var(--foreground-on-accent);
-      --button-white-text-default: var(--foreground-on-accent);
-    
-      --button-white-bg-disabled: var(--surface-disabled);
-      --button-white-bg-active: var(--background-white);
-      --button-white-bg-hover: var(--background-white);
-      --button-white-bg-default: var(--background-white);
-    
-      /* Button - Outline Neutral Variant */
-      --button-outline-neutral-text-disabled: var(--surface-disabled);
-      --button-outline-neutral-text-active: var(--foreground-weak);
-      --button-outline-neutral-text-hover: var(--foreground-weak);
-      --button-outline-neutral-text-default: var(--foreground-weak);
-    
-      --button-outline-neutral-bg-disabled: var(--surface-disabled);
-      --button-outline-neutral-bg-active: var(--shadow-secondary-default);
-      --button-outline-neutral-bg-hover: var(--shadow-secondary-default);
-      --button-outline-neutral-bg-default: var(--background-none);
-    
-      --button-outline-neutral-border-disabled: var(--border-default);
-      --button-outline-neutral-border-active: var(--border-strongest);
-      --button-outline-neutral-border-hover: var(--border-strongest);
-      --button-outline-neutral-border-default: var(--border-white);
-    
-      /* Button - Outline White Variant */
-      --button-outline-white-text-disabled: var(--surface-disabled);
-      --button-outline-white-text-active: var(--foreground-white);
-      --button-outline-white-text-hover: var(--foreground-white);
-      --button-outline-white-text-default: var(--foreground-white);
-    
-      --button-outline-white-bg-disabled: var(--surface-disabled);
-      --button-outline-white-bg-active: var(--shadow-secondary-default);
-      --button-outline-white-bg-hover: var(--shadow-secondary-default);
-      --button-outline-white-bg-default: var(--background-none);
-    
-      --button-outline-white-border-disabled: var(--border-default);
-      --button-outline-white-border-active: var(--border-white);
-      --button-outline-white-border-hover: var(--border-white);
-      --button-outline-white-border-default: var(--border-white);
-    
-      /* Button - Tertiary Accent Variant */
-      --button-tertiary-accent-text-disabled: var(--surface-disabled);
-      --button-tertiary-accent-text-active: var(--accent-stronger);
-      --button-tertiary-accent-text-hover: var(--accent-stronger);
-      --button-tertiary-accent-text-default: var(--accent-strong);
-    
-      --button-tertiary-accent-bg-disabled: var(--background-none);
-      --button-tertiary-accent-bg-active: var(--shadow-accent-weak);
-      --button-tertiary-accent-bg-hover: var(--shadow-accent-weak);
-      --button-tertiary-accent-bg-default: var(--background-none);
-    
-      --button-tertiary-accent-border-disabled: var(--border-none);
-      --button-tertiary-accent-border-active: var(--border-none);
-      --button-tertiary-accent-border-hover: var(--border-none);
-      --button-tertiary-accent-border-default: var(--border-none);
-    
-      /* Button - Tertiary Alert Variant */
-      --button-tertiary-alert-text-disabled: var(--surface-disabled);
-      --button-tertiary-alert-text-active: var(--foreground-error-on-surface);
-      --button-tertiary-alert-text-hover: var(--foreground-error-on-surface);
-      --button-tertiary-alert-text-default: var(--foreground-error);
-    
-      --button-tertiary-alert-bg-disabled: var(--background-none);
-      --button-tertiary-alert-bg-active: var(--surface-error);
-      --button-tertiary-alert-bg-hover: var(--surface-error);
-      --button-tertiary-alert-bg-default: var(--background-none);
-    
-      /* Button - Link Neutral Variant */
-      --button-link-neutral-text-disabled: var(--surface-disabled);
-      --button-link-neutral-text-active: var(--foreground-weak);
-      --button-link-neutral-text-hover: var(--foreground-weak);
-      --button-link-neutral-text-default: var(--foreground-weak);
-    
-      --button-link-neutral-bg-disabled: var(--background-none);
-      --button-link-neutral-bg-active: var(--background-none);
-      --button-link-neutral-bg-hover: var(--background-none);
-      --button-link-neutral-bg-default: var(--background-none);
-    
-      /* Button - Link White Variant */
-      --button-link-white-text-disabled: var(--surface-disabled);
-      --button-link-white-text-active: var(--foreground-white);
-      --button-link-white-text-hover: var(--foreground-white);
-      --button-link-white-text-default: var(--foreground-white);
-    
-      --button-link-white-bg-disabled: var(--background-none);
-      --button-link-white-bg-active: var(--background-none);
-      --button-link-white-bg-hover: var(--background-none);
-      --button-link-white-bg-default: var(--background-none);
-    
-      /* Button - Custom Variant */
-      --button-custom-text-disabled: var(--surface-disabled);
-      --button-custom-text-active: var(--white-4);
-      --button-custom-text-hover: var(--primary-orange-overlay-12);
-      --button-custom-text-default: var(--white-4);
-    
-      --button-custom-bg-disabled: var(--background-none);
-      --button-custom-bg-active: var(--shadow-accent-weak);
-      --button-custom-bg-hover: var(--shadow-accent-weak);
-      --button-custom-bg-default: var(--background-none);
-    
-      /* Currency Field Background */
-      --currency-field-bg-default: var(--background-default);
-      --currency-field-bg-hover: var(--background-weakest);
-      --currency-field-bg-active: var(--background-default);
-      --currency-field-bg-filled: var(--background-default);
-      --currency-field-bg-error: var(--background-default);
-      --currency-field-bg-disabled: var(--surface-default);
-    
-      /* Currency Field Border */
-      --currency-field-border-default: var(--border-default);
-      --currency-field-border-hover: var(--border-strong);
-      --currency-field-border-active: var(--accent-default);
-      --currency-field-border-filled: var(--border-default);
-      --currency-field-border-error: var(--foreground-error);
-      --currency-field-border-disabled: var(--border-strong);
-    
-      /* Currency Field Text */
-      --currency-field-text-label: var(--foreground-weakest);
-      --currency-field-text-balance: var(--foreground-weakest);
-      --currency-field-text-value: var(--foreground-weak);
-      --currency-field-text-placeholder: var(--surface-disabled);
-    
-      /* Currency Field Help Text */
-      --currency-field-help-text-default: var(--foreground-weakest);
-      --currency-field-help-text-hover: var(--foreground-weakest);
-      --currency-field-help-text-active: var(--foreground-weakest);
-      --currency-field-help-text-filled: var(--foreground-weakest);
-      --currency-field-help-text-error: var(--foreground-error);
-      --currency-field-help-text-disabled: var(--surface-disabled);
-    
-    
-      /* Navigation */
-      --navigation-bg: var(--border-strong);
-      --navigation-menu-bg: var(--border-strong);
-      --navigation-hover-bg: var(--border-strong);
-      --navigation-active-bg: var(--border-strong);
-    
-      --navigation-icon-default: var(--border-strong);
-      --navigation-icon-hover: var(--border-strong);
-      --navigation-icon-active: var(--border-strong);
-    
-      /* Background Texture */
-      --bg-texture-background: #000000;
-      --bg-texture-background-16: rgba(0, 0, 0, 0.16);
-      --bg-texture-lines: #000000;
-      --bg-texture-circle: rgba(255, 255, 255, 0);
-    
-      /* Buy PROPC Card */
-      --card-buy-propc-bg: var(--system-yellow-overlay-4);
-      --card-buy-propc-heading: var(--white-100);
-      --card-buy-propc-value-proposition: var(--white-80);
-      --card-buy-propc-icon: var(--primary-orange-base);
-      --card-buy-propc-style: var(--primary-orange-base);
-    
-      --card-buy-propc-text-heading: var(--white-100);
-      --card-buy-propc-text-value-proposition: var(--white-80);
-    
-      /* Header Sub - Light Mode */
-      --header-sub-theme-bg: var(--border-strong);
-      --header-sub-secondary-bg: var(--border-strong);
-      --header-sub-overlay-bg: var(--border-strong);
-      --header-sub-theme-text: var(--border-strong);
-      --header-sub-secondary-text: var(--border-strong);
-      /* Spacing */
-  --spacing-none: 0;
-  --spacing-0_125x: 0.5px;
-  --spacing-px: 1px;
-  --spacing-0_5x: 2px;
-  --spacing-1x: 4px;
-  --spacing-1_5x: 6px;
-  --spacing-2x: 8px;
-  --spacing-3x: 12px;
-  --spacing-4x: 16px;
-  --spacing-5x: 20px;
-  --spacing-6x: 24px;
-  --spacing-8x: 32px;
-  --spacing-10x: 40px;
-  --spacing-12x: 48px;
-  --spacing-16x: 64px;
-  --spacing-20x: 80px;
-  --spacing-24x: 96px;
-  --spacing-32x: 128px;
-  --spacing-48x: 192px;
-  --spacing-50x: 200px;
-  --spacing-54: 216px;
-  --spacing-infinity: 9999px;
-  --spacing-base: 16px;
+  /* Primary Orange */
+  --primary-orange-100: #332601;
+  --primary-orange-90: #553f02;
+  --primary-orange-80: #805f03;
+  --primary-orange-70: #aa7f04;
+  --primary-orange-60: #d59e05;
+  --primary-orange-base: #ffbe06;
+  --primary-orange-50: #ffc92f;
+  --primary-orange-40: #ffd459;
+  --primary-orange-30: #ffdf83;
+  --primary-orange-20: #ffe9ac;
+  --primary-orange-10: #fff2cd;
+  --primary-orange-overlay-50: rgba(255, 242, 205, 0.5);
+  --primary-orange-overlay-24: rgba(255, 212, 89, 0.24);
+  --primary-orange-overlay-12: rgba(255, 212, 89, 0.12);
+  --primary-orange-overlay-4: rgba(255, 212, 89, 0.04);
 
-  /* Sizes */
-  --size-xl: 48px;
-  --size-l: 40px;
-  --size-m: 32px;
-  --size-m-chip: 32px;
-  --size-m-tag: 28px;
-  --size-s: 24px;
-  --size-xs: 20px;
-  --size-2xs: 16px;
-  --size-base: 16px;
+  /* Secondary Teal */
+  --secondary-teal-100: #040908;
+  --secondary-teal-90: #081210;
+  --secondary-teal-80: #102320;
+  --secondary-teal-70: #193531;
+  --secondary-teal-60: #214641;
+  --secondary-teal-base: #295851;
+  --secondary-teal-50: #48746d;
+  --secondary-teal-40: #67908a;
+  --secondary-teal-30: #87aca6;
+  --secondary-teal-20: #a6c8c3;
+  --secondary-teal-10: #b5d6d1;
+  --secondary-teal-overlay-50: rgba(41, 88, 81, 0.5);
+  --secondary-teal-overlay-24: rgba(41, 88, 81, 0.24);
+  --secondary-teal-overlay-12: rgba(41, 88, 81, 0.12);
+  --secondary-teal-overlay-4: rgba(41, 88, 81, 0.04);
 
-  /* Blur */
-  --blur-none: 0px;
-  --blur-sm: 4px;
-  --blur-md: 12px;
-  --blur-lg: 32px;
-  --blur-xl: 64px;
-  --blur-custom: 999px;
-  --blur-2: 2px;
-  --blur-small-8: 8px;
-  --blur-small-10: 10px;
-  --blur-medium-12: 12px;
-  --blur-medium-16: 16px;
-  --blur-large-24: 24px;
-  --blur-large-48: 48px;
-  --blur-xlarge-96: 96px;
-  --blur-2xlarge-144: 144px;
-  --blur-3xlarge-288: 288px;
-  --blur-ultimate-720: 500px;
+  /* Neutral Grey */
+  --neutral-grey-100: #131414;
+  --neutral-grey-90: #222423;
+  --neutral-grey-80: #3e4241;
+  --neutral-grey-70: #5b615f;
+  --neutral-grey-60: #777f7d;
+  --neutral-grey-base: #949e9b;
+  --neutral-grey-50: #a9b1af;
+  --neutral-grey-40: #bfc5c3;
+  --neutral-grey-30: #d4d8d7;
+  --neutral-grey-20: #eaeceb;
+  --neutral-grey-10: #f4f5f5;
 
-  /* Box Shadow */
-  --box-shadow-level-1: 2px;
-  --box-shadow-level-2: 4px;
-  --box-shadow-level-3: 8px;
-  --box-shadow-level-4: 16px;
-  --box-shadow-level-5: 20px;
-  --box-shadow-level-6: 32px;
-  --box-shadow-none: 0;
-  --box-shadow-negative-1: -2px;
-  --box-shadow-negative-2: -4px;
-  --box-shadow-negative-3: -8px;
-  --box-shadow-negative-4: -16px;
-  --box-shadow-negative-5: -20px;
-  --box-shadow-negative-6: -32px;
+  /* Neutral Colors */
+  --white-100: #ffffff;
+  --white-80: rgba(255, 255, 255, 0.8);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-28: rgba(255, 255, 255, 0.28);
+  --white-16: rgba(255, 255, 255, 0.16);
+  --white-4: rgba(255, 255, 255, 0.04);
+  --white-none: rgba(255, 255, 255, 0);
 
-  /* Border Width */
-  --border-width-none: var(--spacing-none);
-  --border-width-xs: var(--spacing-0_125x);
-  --border-width-s: var(--spacing-px);
-  --border-width-m: var(--spacing-0_5x);
-  --border-width-l: var(--spacing-1x);
+  --black-100: #000000;
+  --black-80: rgba(0, 0, 0, 0.8);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --black-28: rgba(0, 0, 0, 0.28);
+  --black-16: rgba(0, 0, 0, 0.16);
+  --black-4: rgba(0, 0, 0, 0.04);
+  --black-none: rgba(0, 0, 0, 0);
 
-  /* Corner Radius */
-  --corner-radius-none: var(--spacing-none);
-  --corner-radius-2xs: var(--spacing-0_5x);
-  --corner-radius-xs: var(--spacing-1x);
-  --corner-radius-s: var(--spacing-1_5x);
-  --corner-radius-m: var(--spacing-2x);
-  --corner-radius-l: var(--spacing-3x);
-  --corner-radius-xl: var(--spacing-4x);
-  --corner-radius-2xl: var(--spacing-5x);
-  --corner-radius-3xl: var(--spacing-6x);
-  --corner-radius-custom: var(--spacing-infinity);
-      
-    }
-    
-    /* Dark mode overrides */
-    .dark {
-      --accent-default: var(--primary-lime-60);
-      --accent-strong: var(--primary-lime-base);
-      --accent-stronger: var(--primary-lime-30);
-      --accent-on-white: var(--primary-lime-20);
-      --accent-on-surface: var(--primary-lime-100);
-    
-      --foreground-default: var(--white-100);
-      --foreground-on-accent: var(--secondary-teal-90);
-      --foreground-weak: var(--white-100);
-      --foreground-weaker: var(--secondary-teal-10);
-      --foreground-weakest: var(--secondary-teal-30);
-      --foreground-inverse: var(--secondary-teal-base);
-      --foreground-white: var(--white-100);
-      --foreground-success: var(--system-green-40);
-      --foreground-success-on-surface: var(--system-green-60);
-      --foreground-warning: var(--system-yellow-40);
-      --foreground-warning-on-surface: var(--system-yellow-60);
-      --foreground-error: var(--system-red-40);
-      --foreground-error-on-surface: var(--system-red-60);
-      --foreground-link: var(--primary-lime-base);
-    
-      --border-none: var(--black-none);
-      --border-default: var(--secondary-teal-50);
-      --border-strong: var(--secondary-teal-40);
-      --border-strongest: var(--secondary-teal-20);
-      --border-accent: var(--primary-lime-base);
-    
-      --surface-accent: var(--primary-lime-overlay-50);
-      --surface-default: var(--secondary-teal-80);
-      --surface-disabled: var(--secondary-teal-30);
-      --surface-success: var(--system-green-overlay-50);
-      --surface-warning: var(--system-yellow-overlay-50);
-      --surface-error: var(--system-red-overlay-50);
-      --surface-overlay: var(--secondary-teal-overlay-50);
-      --surface-overlay-white-50: var(--black-50);
-      --surface-overlay-white-28: var(--black-28);
-    
-      --background-default: var(--secondary-teal-100);
-      --background-weakest: var(--secondary-teal-90);
-      --background-weaker: var(--secondary-teal-80);
-      --background-weak: var(--secondary-teal-70);
-      --background-dark: var(--secondary-teal-60);
-      --background-inverted: var(--white-100);
-      --background-white: var(--white-100);
-      --background-primary: var(--secondary-teal-90);
-      --background-none: var(--black-none);
-    
-      --shadow-accent-default: var(--primary-lime-overlay-24);
-      --shadow-accent-weak: var(--primary-lime-overlay-12);
-      --shadow-secondary-default: var(--secondary-teal-overlay-24);
-      --shadow-secondary-weak: var(--secondary-teal-overlay-12);
-      --shadow-text-inner: var(--secondary-teal-overlay-24);
-    
-        /* Pills/Badges - Primary */
-        --pill-primary-information: var(--primary-lime-base);
-        --pill-primary-warning: var(--system-yellow-60);
-        --pill-primary-success: var(--system-green-60);
-        --pill-primary-error: var(--system-red-60);
-        --pill-primary-neutral: var(--white-100);
-      
-        /* Pills/Badges - Secondary */
-        --pill-secondary-information: var(--primary-lime-overlay-24);
-        --pill-secondary-warning: var(--system-yellow-overlay-24);
-        --pill-secondary-success: var(--system-green-overlay-24);
-        --pill-secondary-error: var(--system-red-overlay-24);
-        --pill-secondary-neutral: var(--white-16);
-      
-        /* Pills/Badges - Text */
-        --pill-text-information: var(--black-100);
-        --pill-text-warning: var(--black-100);
-        --pill-text-success: var(--white-100);
-        --pill-text-error: var(--white-100);
-        --pill-text-neutral: var(--white-100);
-      
-        /* Pills/Badges - Text Secondary */
-        --pill-text-secondary-information: var(--primary-lime-base);
-        --pill-text-secondary-warning: var(--system-yellow-base);
-        --pill-text-secondary-success: var(--system-green-base);
-        --pill-text-secondary-error: var(--system-red-base);
-        --pill-text-secondary-neutral: var(--white-100);
-      
-        /* Pills/Badges - Icon Primary */
-        --pill-icon-primary-information: var(--black-100);
-        --pill-icon-primary-warning: var(--black-100);
-        --pill-icon-primary-success: var(--white-100);
-        --pill-icon-primary-error: var(--white-100);
-        --pill-icon-primary-neutral: var(--black-100);
-      
-        /* Pills/Badges - Icon Secondary */
-        --pill-icon-secondary-information: var(--primary-lime-base);
-        --pill-icon-secondary-warning: var(--system-yellow-base);
-        --pill-icon-secondary-success: var(--system-green-base);
-        --pill-icon-secondary-error: var(--system-red-base);
-        --pill-icon-secondary-neutral: var(--white-100);
-      
-    
-      /* Alert - Background */
-      --alert-bg-information: var(--primary-lime-overlay-12);
-      --alert-bg-warning: var(--system-yellow-overlay-12);
-      --alert-bg-success: var(--system-green-overlay-12);
-      --alert-bg-error: var(--system-red-overlay-12);
-      --alert-bg-neutral: var(--white-16);
-    
-      /* Alert - Border */
-      --alert-border-information: var(--primary-lime-80);
-      --alert-border-warning: var(--system-yellow-80);
-      --alert-border-success: var(--system-green-80);
-      --alert-border-error: var(--system-red-80);
-      --alert-border-neutral: var(--neutral-grey-60);
-    
-      /* Alert - Text */
-      --alert-text-information: var(--primary-lime-base);
-      --alert-text-warning: var(--system-yellow-base);
-      --alert-text-success: var(--system-green-base);
-      --alert-text-error: var(--system-red-base);
-      --alert-text-neutral: var(--white-100);
-      --alert-supporting-text: var(--foreground-weak);
-    
-      /* Alert - Icon */
-      --alert-icon-information: var(--primary-lime-base);
-      --alert-icon-warning: var(--system-yellow-base);
-      --alert-icon-success: var(--system-green-base);
-      --alert-icon-error: var(--system-red-base);
-      --alert-icon-neutral: var(--white-100);
-      --alert-close-icon: var(--foreground-weakest);
-    
-      /* Button - Accent Variant Dark Mode */
-      --button-accent-text-disabled: var(--surface-disabled);
-      --button-accent-text-active: var(--foreground-on-accent);
-      --button-accent-text-hover: var(--foreground-on-accent);
-      --button-accent-text-default: var(--foreground-on-accent);
-    
-      --button-accent-bg-disabled: var(--surface-default);
-      --button-accent-bg-active: var(--accent-strong);
-      --button-accent-bg-hover: var(--accent-strong);
-      --button-accent-bg-default: var(--accent-default);
-    
-      /* Button - White Variant Dark Mode */
-      --button-white-text-disabled: var(--surface-disabled);
-      --button-white-text-active: var(--foreground-inverse);
-      --button-white-text-hover: var(--foreground-inverse);
-      --button-white-text-default: var(--foreground-inverse);
-    
-      --button-white-bg-disabled: var(--surface-disabled);
-      --button-white-bg-active: var(--background-white);
-      --button-white-bg-hover: var(--background-white);
-      --button-white-bg-default: var(--background-white);
-    
-      /* Button - Outline Neutral Variant Dark Mode */
-      --button-outline-neutral-text-disabled: var(--surface-disabled);
-      --button-outline-neutral-text-active: var(--foreground-weak);
-      --button-outline-neutral-text-hover: var(--foreground-weak);
-      --button-outline-neutral-text-default: var(--foreground-weak);
-    
-      --button-outline-neutral-bg-disabled: var(--surface-disabled);
-      --button-outline-neutral-bg-active: var(--shadow-secondary-default);
-      --button-outline-neutral-bg-hover: var(--shadow-secondary-default);
-      --button-outline-neutral-bg-default: var(--background-none);
-    
-      /* Button - Outline White Variant Dark Mode */
-      --button-outline-white-text-disabled: var(--surface-disabled);
-      --button-outline-white-text-active: var(--foreground-white);
-      --button-outline-white-text-hover: var(--foreground-white);
-      --button-outline-white-text-default: var(--foreground-white);
-    
-      --button-outline-white-bg-disabled: var(--surface-disabled);
-      --button-outline-white-bg-active: var(--shadow-secondary-default);
-      --button-outline-white-bg-hover: var(--shadow-secondary-default);
-      --button-outline-white-bg-default: var(--background-none);
-    
-      /* Button - Tertiary Accent Variant Dark Mode */
-      --button-tertiary-accent-text-disabled: var(--surface-disabled);
-      --button-tertiary-accent-text-active: var(--accent-stronger);
-      --button-tertiary-accent-text-hover: var(--accent-stronger);
-      --button-tertiary-accent-text-default: var(--accent-strong);
-    
-      --button-tertiary-accent-bg-disabled: var(--background-none);
-      --button-tertiary-accent-bg-active: var(--shadow-accent-weak);
-      --button-tertiary-accent-bg-hover: var(--shadow-accent-weak);
-      --button-tertiary-accent-bg-default: var(--background-none);
-    
-      /* Button - Tertiary Alert Variant Dark Mode */
-      --button-tertiary-alert-text-disabled: var(--surface-disabled);
-      --button-tertiary-alert-text-active: var(--foreground-error-on-surface);
-      --button-tertiary-alert-text-hover: var(--foreground-error-on-surface);
-      --button-tertiary-alert-text-default: var(--foreground-error);
-    
-      --button-tertiary-alert-bg-disabled: var(--background-none);
-      --button-tertiary-alert-bg-active: var(--surface-error);
-      --button-tertiary-alert-bg-hover: var(--surface-error);
-      --button-tertiary-alert-bg-default: var(--background-none);
-    
-      /* Button - Link Neutral Variant Dark Mode */
-      --button-link-neutral-text-disabled: var(--surface-disabled);
-      --button-link-neutral-text-active: var(--foreground-weak);
-      --button-link-neutral-text-hover: var(--foreground-weak);
-      --button-link-neutral-text-default: var(--foreground-weak);
-    
-      /* Button - Link White Variant Dark Mode */
-      --button-link-white-text-disabled: var(--surface-disabled);
-      --button-link-white-text-active: var(--foreground-white);
-      --button-link-white-text-hover: var(--foreground-white);
-      --button-link-white-text-default: var(--foreground-white);
-    
-      /* Button - Custom Variant Dark Mode */
-      --button-custom-text-disabled: var(--surface-disabled);
-      --button-custom-text-active: var(--white-4);
-      --button-custom-text-hover: var(--primary-orange-overlay-12);
-      --button-custom-text-default: var(--background-none);
-    
-      /* Currency Field Dark Mode */
-      --currency-field-bg-default: var(--background-default);
-      --currency-field-bg-hover: var(--background-weakest);
-      --currency-field-bg-active: var(--background-default);
-      --currency-field-bg-filled: var(--background-default);
-      --currency-field-bg-error: var(--background-default);
-      --currency-field-bg-disabled: var(--surface-default);
-    
-      --currency-field-border-default: var(--border-default);
-      --currency-field-border-hover: var(--border-strong);
-      --currency-field-border-active: var(--accent-default);
-      --currency-field-border-filled: var(--border-default);
-      --currency-field-border-error: var(--foreground-error);
-      --currency-field-border-disabled: var(--border-strong);
-    
-    
-      /* Navigation */
-      --navigation-bg: var(--border-strong);
-      --navigation-menu-bg: var(--border-strong);
-      --navigation-hover-bg: var(--border-strong);
-      --navigation-active-bg: var(--border-strong);
-    
-      --navigation-icon-default: var(--border-strong);
-      --navigation-icon-hover: var(--border-strong);
-      --navigation-icon-active: var(--border-strong);
-    
-      /* Background Texture */
-      --bg-texture-background: #000000;
-      --bg-texture-background-16: rgba(0, 0, 0, 0.16);
-      --bg-texture-lines: #000000;
-      --bg-texture-circle: rgba(255, 255, 255, 0);
-    
-      /* Buy PROPC Card */
-      --card-buy-propc-bg: var(--system-yellow-overlay-4);
-      --card-buy-propc-heading: var(--white-100);
-      --card-buy-propc-value-proposition: var(--white-80);
-      --card-buy-propc-icon: var(--primary-orange-base);
-      --card-buy-propc-style: var(--primary-orange-base);
-    
-      --card-buy-propc-text-heading: var(--white-100);
-      --card-buy-propc-text-value-proposition: var(--white-80);
-    
-      /* Header Sub - Dark Mode */
-      --header-sub-theme-bg: var(--secondary-teal-base);
-      --header-sub-secondary-bg: var(--background-weaker);
-      --header-sub-overlay-bg: rgba(255, 255, 255, 0.16);
-      --header-sub-theme-text: var(--white-100);
-      --header-sub-secondary-text: var(--white-100);
-    }
+  /* System Colors */
+  /* Yellow */
+  --system-yellow-100: #332803;
+  --system-yellow-90: #554205;
+  --system-yellow-80: #806408;
+  --system-yellow-70: #aa850a;
+  --system-yellow-60: #d5a60d;
+  --system-yellow-base: #ffc70f;
+  --system-yellow-50: #ffd037;
+  --system-yellow-40: #ffda5f;
+  --system-yellow-30: #ffe387;
+  --system-yellow-20: #ffecaf;
+  --system-yellow-10: #fff4cf;
+  --system-yellow-overlay-50: rgba(255, 199, 15, 0.5);
+  --system-yellow-overlay-24: rgba(255, 199, 15, 0.24);
+  --system-yellow-overlay-12: rgba(255, 199, 15, 0.12);
+  --system-yellow-overlay-4: rgba(255, 199, 15, 0.04);
+
+  /* Red */
+  --system-red-100: #330e0e;
+  --system-red-90: #551717;
+  --system-red-80: #802323;
+  --system-red-70: #aa2e2e;
+  --system-red-60: #d53a3a;
+  --system-red-base: #ff4545;
+  --system-red-50: #ff6464;
+  --system-red-40: #ff8383;
+  --system-red-30: #ffa2a2;
+  --system-red-20: #ffc1c1;
+  --system-red-10: #ffdada;
+  --system-red-overlay-50: rgba(255, 69, 69, 0.5);
+  --system-red-overlay-24: rgba(255, 69, 69, 0.24);
+  --system-red-overlay-12: rgba(255, 69, 69, 0.12);
+  --system-red-overlay-4: rgba(255, 69, 69, 0.04);
+
+  /* Green */
+  --system-green-100: #002418;
+  --system-green-90: #003d29;
+  --system-green-80: #005b3d;
+  --system-green-70: #007951;
+  --system-green-60: #009866;
+  --system-green-base: #00b67a;
+  --system-green-50: #2ac290;
+  --system-green-40: #55cea6;
+  --system-green-30: #80dbbd;
+  --system-green-20: #aae7d3;
+  --system-green-10: #ccf0e4;
+  --system-green-overlay-50: rgba(0, 182, 122, 0.5);
+  --system-green-overlay-24: rgba(0, 182, 122, 0.24);
+  --system-green-overlay-12: rgba(0, 182, 122, 0.12);
+  --system-green-overlay-4: rgba(0, 182, 122, 0.04);
+
+  /* Semantic Colors */
+  --accent-default: var(--primary-lime-base);
+  --accent-strong: var(--primary-lime-60);
+  --accent-stronger: var(--primary-lime-70);
+  --accent-on-white: var(--primary-lime-80);
+  --accent-on-surface: var(--primary-lime-90);
+
+  --foreground-default: var(--secondary-teal-70);
+  --foreground-on-accent: var(--secondary-teal-80);
+  --foreground-weak: var(--secondary-teal-base);
+  --foreground-weaker: var(--secondary-teal-50);
+  --foreground-weakest: var(--secondary-teal-30);
+  --foreground-inverse: var(--white-100);
+  --foreground-white: var(--white-100);
+  --foreground-success: var(--system-green-60);
+  --foreground-success-on-surface: var(--system-green-80);
+  --foreground-warning: var(--system-yellow-60);
+  --foreground-warning-on-surface: var(--system-yellow-80);
+  --foreground-error: var(--system-red-60);
+  --foreground-error-on-surface: var(--system-red-80);
+  --foreground-link: var(--primary-lime-80);
+
+  --border-none: var(--white-none);
+  --border-default: var(--neutral-grey-base);
+  --border-white: var(--white-100);
+  --border-strong: var(--neutral-grey-40);
+  --border-strongest: var(--secondary-teal-40);
+  --border-accent: var(--primary-lime-base);
+  --border-primary: var(--primary-lime-20);
+
+  --surface-accent: var(--primary-lime-overlay-50);
+  --surface-default: var(--neutral-grey-20);
+  --surface-disabled: var(--neutral-grey-40);
+  --surface-success: var(--system-green-overlay-50);
+  --surface-warning: var(--system-yellow-overlay-50);
+  --surface-error: var(--system-red-overlay-50);
+  --surface-overlay: var(--secondary-teal-overlay-50);
+  --surface-overlay-white-50: var(--white-50);
+  --surface-overlay-white-28: var(--white-28);
+
+  --background-default: var(--white-100);
+  --background-weakest: var(--neutral-grey-30);
+  --background-weaker: var(--neutral-grey-40);
+  --background-weak: var(--neutral-grey-50);
+  --background-darks: var(--secondary-teal-base);
+  --background-inverted: var(--secondary-teal-base);
+  --background-white: var(--white-100);
+  --background-primary: var(--primary-lime-20);
+  --background-none: var(--white-none);
+  --background-dark:
+
+  --shadow-accent-default: var(--primary-lime-overlay-12);
+  --shadow-accent-weak: var(--primary-lime-overlay-4);
+  --shadow-secondary-default: var(--secondary-teal-overlay-12);
+  --shadow-secondary-weak: var(--secondary-teal-overlay-4);
+  --shadow-text-inner: var(--secondary-teal-overlay-12);
+
+
+  /* Pills/Badges - Primary */
+  --pill-primary-information: var(--primary-lime-base);
+  --pill-primary-warning: var(--system-yellow-60);
+  --pill-primary-success: var(--system-green-60);
+  --pill-primary-error: var(--system-red-60);
+  --pill-primary-neutral: var(--black-100);
+
+  /* Pills/Badges - Secondary */
+  --pill-secondary-information: var(--primary-lime-overlay-24);
+  --pill-secondary-warning: var(--system-yellow-overlay-24);
+  --pill-secondary-success: var(--system-green-overlay-24);
+  --pill-secondary-error: var(--system-red-overlay-24);
+  --pill-secondary-neutral: var(--black-16);
+
+  /* Pills/Badges - Text */
+  --pill-text-information: var(--black-100);
+  --pill-text-warning: var(--white-100);
+  --pill-text-success: var(--white-100);
+  --pill-text-error: var(--white-100);
+  --pill-text-neutral: var(--white-100);
+
+  /* Pills/Badges - Text Secondary */
+  --pill-text-secondary-information: var(--primary-lime-70);
+  --pill-text-secondary-warning: var(--system-yellow-70);
+  --pill-text-secondary-success: var(--system-green-70);
+  --pill-text-secondary-error: var(--system-red-70);
+  --pill-text-secondary-neutral: var(--black-100);
+
+  /* Pills/Badges - Icon Primary */
+  --pill-icon-primary-information: var(--black-100);
+  --pill-icon-primary-warning: var(--white-100);
+  --pill-icon-primary-success: var(--white-100);
+  --pill-icon-primary-error: var(--white-100);
+  --pill-icon-primary-neutral: var(--white-100);
+
+  /* Pills/Badges - Icon Secondary */
+  --pill-icon-secondary-information: var(--primary-lime-70);
+  --pill-icon-secondary-warning: var(--system-yellow-70);
+  --pill-icon-secondary-success: var(--system-green-70);
+  --pill-icon-secondary-error: var(--system-red-70);
+  --pill-icon-secondary-neutral: var(--white-100);
+  /* Alert - Background */
+  --alert-bg-information: var(--primary-lime-overlay-24);
+  --alert-bg-warning: var(--primary-orange-overlay-24);
+  --alert-bg-success: var(--system-green-overlay-24);
+  --alert-bg-error: var(--system-red-overlay-24);
+  --alert-bg-neutral: var(--black-28);
+
+  /* Alert - Border */
+  --alert-border-information: var(--primary-lime-70);
+  --alert-border-warning: var(--system-yellow-70);
+  --alert-border-success: var(--system-green-70);
+  --alert-border-error: var(--system-red-70);
+  --alert-border-neutral: var(--black-100);
+
+  /* Alert - Text */
+  --alert-text-information: var(--primary-lime-70);
+  --alert-text-warning: var(--system-yellow-70);
+  --alert-text-success: var(--system-green-70);
+  --alert-text-error: var(--system-red-70);
+  --alert-text-neutral: var(--black-100);
+  --alert-supporting-text: var(--black-100);
+
+
+  /* Alert - Icon */
+  --alert-icon-information: var(--primary-lime-70);
+  --alert-icon-warning: var(--system-yellow-70);
+  --alert-icon-success: var(--system-green-70);
+  --alert-icon-error: var(--system-red-70);
+  --alert-icon-neutral: var(--black-100);
+  --alert-close-icon: var(--black-100);
+  
+  /* Button - Accent Variant */
+  --button-accent-text-disabled: var(--surface-disabled);
+  --button-accent-text-active: var(--foreground-on-accent);
+  --button-accent-text-hover: var(--foreground-on-accent);
+  --button-accent-text-default: var(--foreground-on-accent);
+
+  --button-accent-bg-disabled: var(--border-default);
+  --button-accent-bg-active: var(--accent-strong);
+  --button-accent-bg-hover: var(--accent-strong);
+  --button-accent-bg-default: var(--accent-default);
+
+  --button-accent-border-disabled: var(--border-none);
+  --button-accent-border-active: var(--border-none);
+  --button-accent-border-hover: var(--border-none);
+  --button-accent-border-default: var(--border-none);
+
+  /* Button - White Variant */
+  --button-white-text-disabled: var(--surface-disabled);
+  --button-white-text-active: var(--foreground-on-accent);
+  --button-white-text-hover: var(--foreground-on-accent);
+  --button-white-text-default: var(--foreground-on-accent);
+
+  --button-white-bg-disabled: var(--surface-disabled);
+  --button-white-bg-active: var(--background-white);
+  --button-white-bg-hover: var(--background-white);
+  --button-white-bg-default: var(--background-white);
+
+  /* Button - Outline Neutral Variant */
+  --button-outline-neutral-text-disabled: var(--surface-disabled);
+  --button-outline-neutral-text-active: var(--foreground-weak);
+  --button-outline-neutral-text-hover: var(--foreground-weak);
+  --button-outline-neutral-text-default: var(--foreground-weak);
+
+  --button-outline-neutral-bg-disabled: var(--surface-disabled);
+  --button-outline-neutral-bg-active: var(--shadow-secondary-default);
+  --button-outline-neutral-bg-hover: var(--shadow-secondary-default);
+  --button-outline-neutral-bg-default: var(--background-none);
+
+  --button-outline-neutral-border-disabled: var(--border-default);
+  --button-outline-neutral-border-active: var(--border-strongest);
+  --button-outline-neutral-border-hover: var(--border-strongest);
+  --button-outline-neutral-border-default: var(--border-white);
+
+  /* Button - Outline White Variant */
+  --button-outline-white-text-disabled: var(--surface-disabled);
+  --button-outline-white-text-active: var(--foreground-white);
+  --button-outline-white-text-hover: var(--foreground-white);
+  --button-outline-white-text-default: var(--foreground-white);
+
+  --button-outline-white-bg-disabled: var(--surface-disabled);
+  --button-outline-white-bg-active: var(--shadow-secondary-default);
+  --button-outline-white-bg-hover: var(--shadow-secondary-default);
+  --button-outline-white-bg-default: var(--background-none);
+
+  --button-outline-white-border-disabled: var(--border-default);
+  --button-outline-white-border-active: var(--border-white);
+  --button-outline-white-border-hover: var(--border-white);
+  --button-outline-white-border-default: var(--border-white);
+
+  /* Button - Tertiary Accent Variant */
+  --button-tertiary-accent-text-disabled: var(--surface-disabled);
+  --button-tertiary-accent-text-active: var(--accent-stronger);
+  --button-tertiary-accent-text-hover: var(--accent-stronger);
+  --button-tertiary-accent-text-default: var(--accent-strong);
+
+  --button-tertiary-accent-bg-disabled: var(--background-none);
+  --button-tertiary-accent-bg-active: var(--shadow-accent-weak);
+  --button-tertiary-accent-bg-hover: var(--shadow-accent-weak);
+  --button-tertiary-accent-bg-default: var(--background-none);
+
+  --button-tertiary-accent-border-disabled: var(--border-none);
+  --button-tertiary-accent-border-active: var(--border-none);
+  --button-tertiary-accent-border-hover: var(--border-none);
+  --button-tertiary-accent-border-default: var(--border-none);
+
+  /* Button - Tertiary Alert Variant */
+  --button-tertiary-alert-text-disabled: var(--surface-disabled);
+  --button-tertiary-alert-text-active: var(--foreground-error-on-surface);
+  --button-tertiary-alert-text-hover: var(--foreground-error-on-surface);
+  --button-tertiary-alert-text-default: var(--foreground-error);
+
+  --button-tertiary-alert-bg-disabled: var(--background-none);
+  --button-tertiary-alert-bg-active: var(--surface-error);
+  --button-tertiary-alert-bg-hover: var(--surface-error);
+  --button-tertiary-alert-bg-default: var(--background-none);
+
+  /* Button - Link Neutral Variant */
+  --button-link-neutral-text-disabled: var(--surface-disabled);
+  --button-link-neutral-text-active: var(--foreground-weak);
+  --button-link-neutral-text-hover: var(--foreground-weak);
+  --button-link-neutral-text-default: var(--foreground-weak);
+
+  --button-link-neutral-bg-disabled: var(--background-none);
+  --button-link-neutral-bg-active: var(--background-none);
+  --button-link-neutral-bg-hover: var(--background-none);
+  --button-link-neutral-bg-default: var(--background-none);
+
+  /* Button - Link White Variant */
+  --button-link-white-text-disabled: var(--surface-disabled);
+  --button-link-white-text-active: var(--foreground-white);
+  --button-link-white-text-hover: var(--foreground-white);
+  --button-link-white-text-default: var(--foreground-white);
+
+  --button-link-white-bg-disabled: var(--background-none);
+  --button-link-white-bg-active: var(--background-none);
+  --button-link-white-bg-hover: var(--background-none);
+  --button-link-white-bg-default: var(--background-none);
+
+  /* Button - Custom Variant */
+  --button-custom-text-disabled: var(--surface-disabled);
+  --button-custom-text-active: var(--white-4);
+  --button-custom-text-hover: var(--primary-orange-overlay-12);
+  --button-custom-text-default: var(--white-4);
+
+  --button-custom-bg-disabled: var(--background-none);
+  --button-custom-bg-active: var(--shadow-accent-weak);
+  --button-custom-bg-hover: var(--shadow-accent-weak);
+  --button-custom-bg-default: var(--background-none);
+
+  /* Currency Field Background */
+  --currency-field-bg-default: var(--background-default);
+  --currency-field-bg-hover: var(--background-weakest);
+  --currency-field-bg-active: var(--background-default);
+  --currency-field-bg-filled: var(--background-default);
+  --currency-field-bg-error: var(--background-default);
+  --currency-field-bg-disabled: var(--surface-default);
+
+  /* Currency Field Border */
+  --currency-field-border-default: var(--border-default);
+  --currency-field-border-hover: var(--border-strong);
+  --currency-field-border-active: var(--accent-default);
+  --currency-field-border-filled: var(--border-default);
+  --currency-field-border-error: var(--foreground-error);
+  --currency-field-border-disabled: var(--border-strong);
+
+  /* Currency Field Text */
+  --currency-field-text-label: var(--foreground-weakest);
+  --currency-field-text-balance: var(--foreground-weakest);
+  --currency-field-text-value: var(--foreground-weak);
+  --currency-field-text-placeholder: var(--surface-disabled);
+
+  /* Currency Field Help Text */
+  --currency-field-help-text-default: var(--foreground-weakest);
+  --currency-field-help-text-hover: var(--foreground-weakest);
+  --currency-field-help-text-active: var(--foreground-weakest);
+  --currency-field-help-text-filled: var(--foreground-weakest);
+  --currency-field-help-text-error: var(--foreground-error);
+  --currency-field-help-text-disabled: var(--surface-disabled);
+
+
+  /* Navigation */
+  --navigation-bg: var(--border-strong);
+  --navigation-menu-bg: var(--border-strong);
+  --navigation-hover-bg: var(--border-strong);
+  --navigation-active-bg: var(--border-strong);
+
+  --navigation-icon-default: var(--border-strong);
+  --navigation-icon-hover: var(--border-strong);
+  --navigation-icon-active: var(--border-strong);
+
+  /* Background Texture */
+  --bg-texture-background: #000000;
+  --bg-texture-background-16: rgba(0, 0, 0, 0.16);
+  --bg-texture-lines: #000000;
+  --bg-texture-circle: rgba(255, 255, 255, 0);
+
+  /* Buy PROPC Card */
+  --card-buy-propc-bg: var(--system-yellow-overlay-4);
+  --card-buy-propc-heading: var(--white-100);
+  --card-buy-propc-value-proposition: var(--white-80);
+  --card-buy-propc-icon: var(--primary-orange-base);
+  --card-buy-propc-style: var(--primary-orange-base);
+
+  --card-buy-propc-text-heading: var(--white-100);
+  --card-buy-propc-text-value-proposition: var(--white-80);
+
+  /* Header Sub - Light Mode */
+  --header-sub-theme-bg: var(--border-strong);
+  --header-sub-secondary-bg: var(--border-strong);
+  --header-sub-overlay-bg: var(--border-strong);
+  --header-sub-theme-text: var(--border-strong);
+  --header-sub-secondary-text: var(--border-strong);
+}
+
+/* Dark mode overrides */
+.dark {
+  --accent-default: var(--primary-lime-60);
+  --accent-strong: var(--primary-lime-base);
+  --accent-stronger: var(--primary-lime-30);
+  --accent-on-white: var(--primary-lime-20);
+  --accent-on-surface: var(--primary-lime-100);
+
+  --foreground-default: var(--white-100);
+  --foreground-on-accent: var(--secondary-teal-90);
+  --foreground-weak: var(--white-100);
+  --foreground-weaker: var(--secondary-teal-10);
+  --foreground-weakest: var(--secondary-teal-30);
+  --foreground-inverse: var(--secondary-teal-base);
+  --foreground-white: var(--white-100);
+  --foreground-success: var(--system-green-40);
+  --foreground-success-on-surface: var(--system-green-60);
+  --foreground-warning: var(--system-yellow-40);
+  --foreground-warning-on-surface: var(--system-yellow-60);
+  --foreground-error: var(--system-red-40);
+  --foreground-error-on-surface: var(--system-red-60);
+  --foreground-link: var(--primary-lime-base);
+
+  --border-none: var(--black-none);
+  --border-default: var(--secondary-teal-60);
+  --border-strong: var(--secondary-teal-40);
+  --border-strongest: var(--secondary-teal-20);
+  --border-accent: var(--primary-lime-base);
+
+  --surface-accent: var(--primary-lime-overlay-50);
+  --surface-default: var(--secondary-teal-80);
+  --surface-disabled: var(--secondary-teal-30);
+  --surface-success: var(--system-green-overlay-50);
+  --surface-warning: var(--system-yellow-overlay-50);
+  --surface-error: var(--system-red-overlay-50);
+  --surface-overlay: var(--secondary-teal-overlay-50);
+  --surface-overlay-white-50: var(--black-50);
+  --surface-overlay-white-28: var(--black-28);
+
+  --background-default: var(--secondary-teal-100);
+  --background-weakest: var(--secondary-teal-90);
+  --background-weaker: var(--secondary-teal-80);
+  --background-weak: var(--secondary-teal-70);
+  --background-dark: var(--secondary-teal-60);
+  --background-inverted: var(--white-100);
+  --background-white: var(--white-100);
+  --background-primary: var(--secondary-teal-90);
+  --background-none: var(--black-none);
+
+  --shadow-accent-default: var(--primary-lime-overlay-24);
+  --shadow-accent-weak: var(--primary-lime-overlay-12);
+  --shadow-secondary-default: var(--secondary-teal-overlay-24);
+  --shadow-secondary-weak: var(--secondary-teal-overlay-12);
+  --shadow-text-inner: var(--secondary-teal-overlay-24);
+
+    /* Pills/Badges - Primary */
+    --pill-primary-information: var(--primary-lime-base);
+    --pill-primary-warning: var(--system-yellow-60);
+    --pill-primary-success: var(--system-green-60);
+    --pill-primary-error: var(--system-red-60);
+    --pill-primary-neutral: var(--white-100);
+  
+    /* Pills/Badges - Secondary */
+    --pill-secondary-information: var(--primary-lime-overlay-24);
+    --pill-secondary-warning: var(--system-yellow-overlay-24);
+    --pill-secondary-success: var(--system-green-overlay-24);
+    --pill-secondary-error: var(--system-red-overlay-24);
+    --pill-secondary-neutral: var(--white-16);
+  
+    /* Pills/Badges - Text */
+    --pill-text-information: var(--black-100);
+    --pill-text-warning: var(--black-100);
+    --pill-text-success: var(--white-100);
+    --pill-text-error: var(--white-100);
+    --pill-text-neutral: var(--white-100);
+  
+    /* Pills/Badges - Text Secondary */
+    --pill-text-secondary-information: var(--primary-lime-base);
+    --pill-text-secondary-warning: var(--system-yellow-base);
+    --pill-text-secondary-success: var(--system-green-base);
+    --pill-text-secondary-error: var(--system-red-base);
+    --pill-text-secondary-neutral: var(--white-100);
+  
+    /* Pills/Badges - Icon Primary */
+    --pill-icon-primary-information: var(--black-100);
+    --pill-icon-primary-warning: var(--black-100);
+    --pill-icon-primary-success: var(--white-100);
+    --pill-icon-primary-error: var(--white-100);
+    --pill-icon-primary-neutral: var(--black-100);
+  
+    /* Pills/Badges - Icon Secondary */
+    --pill-icon-secondary-information: var(--primary-lime-base);
+    --pill-icon-secondary-warning: var(--system-yellow-base);
+    --pill-icon-secondary-success: var(--system-green-base);
+    --pill-icon-secondary-error: var(--system-red-base);
+    --pill-icon-secondary-neutral: var(--white-100);
+  
+
+  /* Alert - Background */
+  --alert-bg-information: var(--primary-lime-overlay-12);
+  --alert-bg-warning: var(--system-yellow-overlay-12);
+  --alert-bg-success: var(--system-green-overlay-12);
+  --alert-bg-error: var(--system-red-overlay-12);
+  --alert-bg-neutral: var(--white-16);
+
+  /* Alert - Border */
+  --alert-border-information: var(--primary-lime-80);
+  --alert-border-warning: var(--system-yellow-80);
+  --alert-border-success: var(--system-green-80);
+  --alert-border-error: var(--system-red-80);
+  --alert-border-neutral: var(--neutral-grey-60);
+
+  /* Alert - Text */
+  --alert-text-information: var(--primary-lime-base);
+  --alert-text-warning: var(--system-yellow-base);
+  --alert-text-success: var(--system-green-base);
+  --alert-text-error: var(--system-red-base);
+  --alert-text-neutral: var(--white-100);
+  --alert-supporting-text: var(--foreground-weak);
+
+  /* Alert - Icon */
+  --alert-icon-information: var(--primary-lime-base);
+  --alert-icon-warning: var(--system-yellow-base);
+  --alert-icon-success: var(--system-green-base);
+  --alert-icon-error: var(--system-red-base);
+  --alert-icon-neutral: var(--white-100);
+  --alert-close-icon: var(--foreground-weakest);
+
+  /* Button - Accent Variant Dark Mode */
+  --button-accent-text-disabled: var(--surface-disabled);
+  --button-accent-text-active: var(--foreground-on-accent);
+  --button-accent-text-hover: var(--foreground-on-accent);
+  --button-accent-text-default: var(--foreground-on-accent);
+
+  --button-accent-bg-disabled: var(--background-dark);
+  --button-accent-bg-active: var(--accent-strong);
+  --button-accent-bg-hover: var(--accent-strong);
+  --button-accent-bg-default: var(--accent-default);
+
+  /* Button - White Variant Dark Mode */
+  --button-white-text-disabled: var(--surface-disabled);
+  --button-white-text-active: var(--foreground-inverse);
+  --button-white-text-hover: var(--foreground-inverse);
+  --button-white-text-default: var(--foreground-inverse);
+
+  --button-white-bg-disabled: var(--surface-disabled);
+  --button-white-bg-active: var(--background-white);
+  --button-white-bg-hover: var(--background-white);
+  --button-white-bg-default: var(--background-white);
+
+  /* Button - Outline Neutral Variant Dark Mode */
+  --button-outline-neutral-text-disabled: var(--surface-disabled);
+  --button-outline-neutral-text-active: var(--foreground-weak);
+  --button-outline-neutral-text-hover: var(--foreground-weak);
+  --button-outline-neutral-text-default: var(--foreground-weak);
+
+  --button-outline-neutral-bg-disabled: var(--surface-disabled);
+  --button-outline-neutral-bg-active: var(--shadow-secondary-default);
+  --button-outline-neutral-bg-hover: var(--shadow-secondary-default);
+  --button-outline-neutral-bg-default: var(--background-none);
+
+  /* Button - Outline White Variant Dark Mode */
+  --button-outline-white-text-disabled: var(--surface-disabled);
+  --button-outline-white-text-active: var(--foreground-white);
+  --button-outline-white-text-hover: var(--foreground-white);
+  --button-outline-white-text-default: var(--foreground-white);
+
+  --button-outline-white-bg-disabled: var(--surface-disabled);
+  --button-outline-white-bg-active: var(--shadow-secondary-default);
+  --button-outline-white-bg-hover: var(--shadow-secondary-default);
+  --button-outline-white-bg-default: var(--background-none);
+
+  /* Button - Tertiary Accent Variant Dark Mode */
+  --button-tertiary-accent-text-disabled: var(--surface-disabled);
+  --button-tertiary-accent-text-active: var(--accent-stronger);
+  --button-tertiary-accent-text-hover: var(--accent-stronger);
+  --button-tertiary-accent-text-default: var(--accent-strong);
+
+  --button-tertiary-accent-bg-disabled: var(--background-none);
+  --button-tertiary-accent-bg-active: var(--shadow-accent-weak);
+  --button-tertiary-accent-bg-hover: var(--shadow-accent-weak);
+  --button-tertiary-accent-bg-default: var(--background-none);
+
+  /* Button - Tertiary Alert Variant Dark Mode */
+  --button-tertiary-alert-text-disabled: var(--surface-disabled);
+  --button-tertiary-alert-text-active: var(--foreground-error-on-surface);
+  --button-tertiary-alert-text-hover: var(--foreground-error-on-surface);
+  --button-tertiary-alert-text-default: var(--foreground-error);
+
+  --button-tertiary-alert-bg-disabled: var(--background-none);
+  --button-tertiary-alert-bg-active: var(--surface-error);
+  --button-tertiary-alert-bg-hover: var(--surface-error);
+  --button-tertiary-alert-bg-default: var(--background-none);
+
+  /* Button - Link Neutral Variant Dark Mode */
+  --button-link-neutral-text-disabled: var(--surface-disabled);
+  --button-link-neutral-text-active: var(--foreground-weak);
+  --button-link-neutral-text-hover: var(--foreground-weak);
+  --button-link-neutral-text-default: var(--foreground-weak);
+
+  /* Button - Link White Variant Dark Mode */
+  --button-link-white-text-disabled: var(--surface-disabled);
+  --button-link-white-text-active: var(--foreground-white);
+  --button-link-white-text-hover: var(--foreground-white);
+  --button-link-white-text-default: var(--foreground-white);
+
+  /* Button - Custom Variant Dark Mode */
+  --button-custom-text-disabled: var(--surface-disabled);
+  --button-custom-text-active: var(--white-4);
+  --button-custom-text-hover: var(--primary-orange-overlay-12);
+  --button-custom-text-default: var(--background-none);
+
+  /* Currency Field Dark Mode */
+  --currency-field-bg-default: var(--background-default);
+  --currency-field-bg-hover: var(--background-weakest);
+  --currency-field-bg-active: var(--background-default);
+  --currency-field-bg-filled: var(--background-default);
+  --currency-field-bg-error: var(--background-default);
+  --currency-field-bg-disabled: var(--surface-default);
+
+  --currency-field-border-default: var(--border-default);
+  --currency-field-border-hover: var(--border-strong);
+  --currency-field-border-active: var(--accent-default);
+  --currency-field-border-filled: var(--border-default);
+  --currency-field-border-error: var(--foreground-error);
+  --currency-field-border-disabled: var(--border-strong);
+
+
+  /* Navigation */
+  --navigation-bg: var(--border-strong);
+  --navigation-menu-bg: var(--border-strong);
+  --navigation-hover-bg: var(--border-strong);
+  --navigation-active-bg: var(--border-strong);
+
+  --navigation-icon-default: var(--border-strong);
+  --navigation-icon-hover: var(--border-strong);
+  --navigation-icon-active: var(--border-strong);
+
+  /* Background Texture */
+  --bg-texture-background: #000000;
+  --bg-texture-background-16: rgba(0, 0, 0, 0.16);
+  --bg-texture-lines: #000000;
+  --bg-texture-circle: rgba(255, 255, 255, 0);
+
+  /* Buy PROPC Card */
+  --card-buy-propc-bg: var(--system-yellow-overlay-4);
+  --card-buy-propc-heading: var(--white-100);
+  --card-buy-propc-value-proposition: var(--white-80);
+  --card-buy-propc-icon: var(--primary-orange-base);
+  --card-buy-propc-style: var(--primary-orange-base);
+
+  --card-buy-propc-text-heading: var(--white-100);
+  --card-buy-propc-text-value-proposition: var(--white-80);
+
+  /* Header Sub - Dark Mode */
+  --header-sub-theme-bg: var(--secondary-teal-base);
+  --header-sub-secondary-bg: var(--background-weaker);
+  --header-sub-overlay-bg: rgba(255, 255, 255, 0.16);
+  --header-sub-theme-text: var(--white-100);
+  --header-sub-secondary-text: var(--white-100);
+}
