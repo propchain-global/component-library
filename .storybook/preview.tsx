@@ -19,12 +19,15 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+    
     },
+  
   },
 
   decorators: [
     withThemeByClassName({
       themes: {
+      
           // nameOfTheme: 'classNameForTheme',
           light: '',
           dark: 'dark',
@@ -33,11 +36,12 @@ const preview: Preview = {
       parentSelector: 'body',
     }),
     (Story) => (
-      <div className={`${inter.className} ${kodeMono.variable} antialiased dark font-inter`}>
+      <div data-theme="welf" className={`${inter.className} ${kodeMono.variable} antialiased dark font-inter`}>
         <Story  />
       </div>
     ),
   ],
+  
 };
 
 export default preview;

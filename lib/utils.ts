@@ -41,3 +41,8 @@ const customTWMerge = extendTailwindMerge({
 export function cn(...inputs: ClassValue[]) {
     return customTWMerge(clsx(inputs));
 }
+
+
+export function welfGlobalTaiwindContent() {
+    return './node_modules/welf-global-toolkit/dist/**/*.js'
+}
