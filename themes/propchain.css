@@ -125,7 +125,7 @@
    --accent-on-surface: var(--primary-orange-90);
  
    --foreground-default: var(--secondary-navy-70);
-   --foreground-on-accent: var(--black-80);
+   --foreground-on-accent: var(--secondary-navy-base);
    --foreground-weak: var(--secondary-navy-base);
    --foreground-weaker: var(--secondary-navy-50);
    --foreground-weakest: var(--secondary-navy-30);
@@ -473,7 +473,6 @@
    --popup-guide-video-heading: var(--white-100);
    --popup-guide-video-icon: var(--primary-orange-base);
    --popup-guide-video-bg: var(--primary-orange-overlay-12);
-   
    /* Spacing */
   --spacing-none: 0;
   --spacing-0_125x: 0.5px;
@@ -585,7 +584,7 @@
    --accent-on-surface: var(--primary-orange-100);
  
    --foreground-default: var(--white-100);
-   --foreground-on-accent: var(--white-80);
+   --foreground-on-accent: var(--white-100);
    --foreground-weak: var(--white-100);
    --foreground-weaker: var(--secondary-navy-10);
    --foreground-weakest: var(--secondary-navy-30);
@@ -625,7 +624,7 @@
    --shadow-text-inner: var(--secondary-navy-overlay-24);
  
    /* Pills/Badges - Primary */
-   --pill-primary-information: var(--primary-orange-base);
+   --pill-primary-information: var(--system-green-110);
    --pill-primary-warning: var(--system-yellow-60);
    --pill-primary-success: var(--system-green-60);
    --pill-primary-error: var(--system-red-60);

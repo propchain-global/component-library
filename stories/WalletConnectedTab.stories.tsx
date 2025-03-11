@@ -1,4 +1,4 @@
-import {  WalletConnectTab } from '@/components/ui/wallet-connect';
+import {  WalletConnectTab } from '@/components/ui/wallet-conntect-tab';
 import { backgroundColor } from '@/stylecore/color';
 import type { Meta, StoryObj } from '@storybook/react';
 
