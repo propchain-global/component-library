@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import "../themes/welf.css"; */
-@import "../themes/propchain.css";
+[data-theme="welf"] {
+  @import "../themes/welf.css";
+}
+
+[data-theme="propchain"] {
+  @import "../themes/propchain.css";
+}
 
 body {
   color: var(--foreground-default);

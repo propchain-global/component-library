@@ -35,7 +35,7 @@ const iconSizeMap: Record<string, string> = {
     s: 'h-[16px] w-[16px]',
 };
 
-export interface ButtonProps
+export interface WhiteButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
@@ -47,7 +47,7 @@ export interface ButtonProps
   disabled?: boolean;
 }
 
-const WhiteButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const WhiteButton = React.forwardRef<HTMLButtonElement, WhiteButtonProps>(
   ({ className, variant = 'primary', size = 'xl', asChild = false, IconLeft, IconRight, disabled = false, is_loading, children, ...props }, ref) => {
     const Comp = asChild ? Slot : "button";
 
@@ -77,4 +77,4 @@ const WhiteButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 WhiteButton.displayName = "WhiteButton";
 
-export { WhiteButton, buttonVariants };
+export { WhiteButton, buttonVariants as whiteButtonVariants };
