@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-[data-theme="welf"] {
+/* [data-theme="welf"] {
   @import "../themes/welf.css";
-}
-
-[data-theme="propchain"] {
+} */
+@import "../themes/welf.css";
+/* [data-theme="propchain"] {
   @import "../themes/propchain.css";
-}
+} */
 
 body {
   color: var(--foreground-default);
