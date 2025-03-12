@@ -160,6 +160,7 @@
   --border-strong: var(--neutral-grey-40);
   --border-strongest: var(--secondary-teal-40);
   --border-accent: var(--primary-lime-base);
+  --border-primary: var(--primary-lime-20);
 
   --surface-accent: var(--primary-lime-overlay-50);
   --surface-default: var(--neutral-grey-20);
@@ -180,6 +181,7 @@
   --background-white: var(--white-100);
   --background-primary: var(--primary-lime-20);
   --background-none: var(--white-none);
+  --background-dark:
 
   --shadow-accent-default: var(--primary-lime-overlay-12);
   --shadow-accent-weak: var(--primary-lime-overlay-4);
@@ -259,7 +261,7 @@
   --alert-icon-error: var(--system-red-70);
   --alert-icon-neutral: var(--black-100);
   --alert-close-icon: var(--black-100);
-
+  
   /* Button - Accent Variant */
   --button-accent-text-disabled: var(--surface-disabled);
   --button-accent-text-active: var(--foreground-on-accent);
@@ -442,96 +444,6 @@
   --header-sub-overlay-bg: var(--border-strong);
   --header-sub-theme-text: var(--border-strong);
   --header-sub-secondary-text: var(--border-strong);
-
-  /* Spacing */
-  --spacing-none: 0;
-  --spacing-0_125x: 0.5px;
-  --spacing-px: 1px;
-  --spacing-0_5x: 2px;
-  --spacing-1x: 4px;
-  --spacing-1_5x: 6px;
-  --spacing-2x: 8px;
-  --spacing-3x: 12px;
-  --spacing-4x: 16px;
-  --spacing-5x: 20px;
-  --spacing-6x: 24px;
-  --spacing-8x: 32px;
-  --spacing-10x: 40px;
-  --spacing-12x: 48px;
-  --spacing-16x: 64px;
-  --spacing-20x: 80px;
-  --spacing-24x: 96px;
-  --spacing-32x: 128px;
-  --spacing-48x: 192px;
-  --spacing-50x: 200px;
-  --spacing-54: 216px;
-  --spacing-infinity: 9999px;
-  --spacing-base: 16px;
-
-  /* Sizes */
-  --size-xl: 48px;
-  --size-l: 40px;
-  --size-m: 32px;
-  --size-m-chip: 32px;
-  --size-m-tag: 28px;
-  --size-s: 24px;
-  --size-xs: 20px;
-  --size-2xs: 16px;
-  --size-base: 16px;
-
-  /* Blur */
-  --blur-none: 0px;
-  --blur-sm: 4px;
-  --blur-md: 12px;
-  --blur-lg: 32px;
-  --blur-xl: 64px;
-  --blur-custom: 999px;
-  --blur-2: 2px;
-  --blur-small-8: 8px;
-  --blur-small-10: 10px;
-  --blur-medium-12: 12px;
-  --blur-medium-16: 16px;
-  --blur-large-24: 24px;
-  --blur-large-48: 48px;
-  --blur-xlarge-96: 96px;
-  --blur-2xlarge-144: 144px;
-  --blur-3xlarge-288: 288px;
-  --blur-ultimate-720: 500px;
-
-  /* Box Shadow */
-  --box-shadow-level-1: 2px;
-  --box-shadow-level-2: 4px;
-  --box-shadow-level-3: 8px;
-  --box-shadow-level-4: 16px;
-  --box-shadow-level-5: 20px;
-  --box-shadow-level-6: 32px;
-  --box-shadow-none: 0;
-  --box-shadow-negative-1: -2px;
-  --box-shadow-negative-2: -4px;
-  --box-shadow-negative-3: -8px;
-  --box-shadow-negative-4: -16px;
-  --box-shadow-negative-5: -20px;
-  --box-shadow-negative-6: -32px;
-
-  /* Border Width */
-  --border-width-none: var(--spacing-none);
-  --border-width-xs: var(--spacing-0_125x);
-  --border-width-s: var(--spacing-px);
-  --border-width-m: var(--spacing-0_5x);
-  --border-width-l: var(--spacing-1x);
-
-  /* Corner Radius */
-  --corner-radius-none: var(--spacing-none);
-  --corner-radius-2xs: var(--spacing-0_5x);
-  --corner-radius-xs: var(--spacing-1x);
-  --corner-radius-s: var(--spacing-1_5x);
-  --corner-radius-m: var(--spacing-2x);
-  --corner-radius-l: var(--spacing-3x);
-  --corner-radius-xl: var(--spacing-4x);
-  --corner-radius-2xl: var(--spacing-5x);
-  --corner-radius-3xl: var(--spacing-6x);
-  --corner-radius-custom: var(--spacing-infinity);
-  
 }
 
 /* Dark mode overrides */
@@ -558,7 +470,7 @@
   --foreground-link: var(--primary-lime-base);
 
   --border-none: var(--black-none);
-  --border-default: var(--secondary-teal-50);
+  --border-default: var(--secondary-teal-60);
   --border-strong: var(--secondary-teal-40);
   --border-strongest: var(--secondary-teal-20);
   --border-accent: var(--primary-lime-base);
@@ -589,48 +501,48 @@
   --shadow-secondary-weak: var(--secondary-teal-overlay-12);
   --shadow-text-inner: var(--secondary-teal-overlay-24);
 
-  /* Pills/Badges - Primary */
-  --pill-primary-information: var(--primary-lime-base);
-  --pill-primary-warning: var(--system-yellow-60);
-  --pill-primary-success: var(--system-green-60);
-  --pill-primary-error: var(--system-red-60);
-  --pill-primary-neutral: var(--white-100);
-
-  /* Pills/Badges - Secondary */
-  --pill-secondary-information: var(--primary-lime-overlay-24);
-  --pill-secondary-warning: var(--system-yellow-overlay-24);
-  --pill-secondary-success: var(--system-green-overlay-24);
-  --pill-secondary-error: var(--system-red-overlay-24);
-  --pill-secondary-neutral: var(--white-16);
-
-  /* Pills/Badges - Text */
-  --pill-text-information: var(--black-100);
-  --pill-text-warning: var(--black-100);
-  --pill-text-success: var(--white-100);
-  --pill-text-error: var(--white-100);
-  --pill-text-neutral: var(--white-100);
-
-  /* Pills/Badges - Text Secondary */
-  --pill-text-secondary-information: var(--primary-lime-base);
-  --pill-text-secondary-warning: var(--system-yellow-base);
-  --pill-text-secondary-success: var(--system-green-base);
-  --pill-text-secondary-error: var(--system-red-base);
-  --pill-text-secondary-neutral: var(--white-100);
-
-  /* Pills/Badges - Icon Primary */
-  --pill-icon-primary-information: var(--black-100);
-  --pill-icon-primary-warning: var(--black-100);
-  --pill-icon-primary-success: var(--white-100);
-  --pill-icon-primary-error: var(--white-100);
-  --pill-icon-primary-neutral: var(--black-100);
-
-  /* Pills/Badges - Icon Secondary */
-  --pill-icon-secondary-information: var(--primary-lime-base);
-  --pill-icon-secondary-warning: var(--system-yellow-base);
-  --pill-icon-secondary-success: var(--system-green-base);
-  --pill-icon-secondary-error: var(--system-red-base);
-  --pill-icon-secondary-neutral: var(--white-100);
-
+    /* Pills/Badges - Primary */
+    --pill-primary-information: var(--primary-lime-base);
+    --pill-primary-warning: var(--system-yellow-60);
+    --pill-primary-success: var(--system-green-60);
+    --pill-primary-error: var(--system-red-60);
+    --pill-primary-neutral: var(--white-100);
+  
+    /* Pills/Badges - Secondary */
+    --pill-secondary-information: var(--primary-lime-overlay-24);
+    --pill-secondary-warning: var(--system-yellow-overlay-24);
+    --pill-secondary-success: var(--system-green-overlay-24);
+    --pill-secondary-error: var(--system-red-overlay-24);
+    --pill-secondary-neutral: var(--white-16);
+  
+    /* Pills/Badges - Text */
+    --pill-text-information: var(--black-100);
+    --pill-text-warning: var(--black-100);
+    --pill-text-success: var(--white-100);
+    --pill-text-error: var(--white-100);
+    --pill-text-neutral: var(--white-100);
+  
+    /* Pills/Badges - Text Secondary */
+    --pill-text-secondary-information: var(--primary-lime-base);
+    --pill-text-secondary-warning: var(--system-yellow-base);
+    --pill-text-secondary-success: var(--system-green-base);
+    --pill-text-secondary-error: var(--system-red-base);
+    --pill-text-secondary-neutral: var(--white-100);
+  
+    /* Pills/Badges - Icon Primary */
+    --pill-icon-primary-information: var(--black-100);
+    --pill-icon-primary-warning: var(--black-100);
+    --pill-icon-primary-success: var(--white-100);
+    --pill-icon-primary-error: var(--white-100);
+    --pill-icon-primary-neutral: var(--black-100);
+  
+    /* Pills/Badges - Icon Secondary */
+    --pill-icon-secondary-information: var(--primary-lime-base);
+    --pill-icon-secondary-warning: var(--system-yellow-base);
+    --pill-icon-secondary-success: var(--system-green-base);
+    --pill-icon-secondary-error: var(--system-red-base);
+    --pill-icon-secondary-neutral: var(--white-100);
+  
 
   /* Alert - Background */
   --alert-bg-information: var(--primary-lime-overlay-12);
@@ -668,7 +580,7 @@
   --button-accent-text-hover: var(--foreground-on-accent);
   --button-accent-text-default: var(--foreground-on-accent);
 
-  --button-accent-bg-disabled: var(--surface-default);
+  --button-accent-bg-disabled: var(--background-dark);
   --button-accent-bg-active: var(--accent-strong);
   --button-accent-bg-hover: var(--accent-strong);
   --button-accent-bg-default: var(--accent-default);
@@ -794,5 +706,4 @@
   --header-sub-overlay-bg: rgba(255, 255, 255, 0.16);
   --header-sub-theme-text: var(--white-100);
   --header-sub-secondary-text: var(--white-100);
-  
 }
