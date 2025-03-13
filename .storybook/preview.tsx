@@ -36,7 +36,7 @@ const preview: Preview = {
       parentSelector: 'body',
     }),
     (Story) => (
-      <div data-theme="welf" className={`${inter.className} ${kodeMono.variable} antialiased dark font-inter`}>
+      <div data-theme="welf" className={`${inter.className} ${kodeMono.variable} antialiased font-inter`}>
         <Story  />
       </div>
     ),

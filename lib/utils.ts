@@ -21,15 +21,24 @@ const customTWMerge = extendTailwindMerge({
                 'text-body-2xl-strong'
             ],
             'border-color': [
-                'border-CurrencyField-primary-default',
-                'border-CurrencyField-primary-active',
-                'border-CurrencyField-primary-disabled',
+                'border-currency-field-border-default',
+                'border-currency-field-border-active',
+                'border-currency-field-border-disabled',
                 'border-surface-overlay',
                 'border-button-outline-neutral-default',
                 'border-default',
+                'border-button-secondary-default',
+                'border-button-secondary-active',
+                'border-button-secondary-disabled',
+                'border-button-secondary-hover',
+                
             ],
             'border-w': [
-                'border-Button-xl',
+                'border-button-xl',
+                'border-button-l',
+                'border-button-m',
+                'border-button-s',
+                'border-currency-field-border',
             ],
             'rounded': [
                 'rounded-l'
