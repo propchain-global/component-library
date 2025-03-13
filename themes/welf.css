@@ -231,6 +231,13 @@
   --pill-icon-secondary-success: var(--system-green-70);
   --pill-icon-secondary-error: var(--system-red-70);
   --pill-icon-secondary-neutral: var(--white-100);
+
+  /* Pills/Badges - Radius */
+--pill-radius: var(--border-radius-custom);
+
+/* Pills/Badges - Size */
+--pill-height-s: var(--spacing-5x);
+--pill-height-l: var(--spacing-6x);
   /* Alert - Background */
   --alert-bg-information: var(--primary-lime-overlay-24);
   --alert-bg-warning: var(--primary-orange-overlay-24);
@@ -304,6 +311,22 @@
   --button-outline-neutral-border-active: var(--border-strongest);
   --button-outline-neutral-border-hover: var(--border-strongest);
   --button-outline-neutral-border-default: var(--border-white);
+
+   /* Button - Secondary Variant */
+   --button-secondary-accent-text-disabled: var(--surface-disabled);
+   --button-secondary-accent-text-active: var(--accent-stronger);
+   --button-secondary-accent-text-hover: var(--accent-stronger);
+   --button-secondary-accent-text-default: var(--accent-strong);
+ 
+   --button-secondary-accent-bg-disabled: var(--background-none);
+   --button-secondary-accent-bg-active: var(--shadow-accent-weak);
+   --button-secondary-accent-bg-hover: var(--shadow-accent-weak);
+   --button-secondary-accent-bg-default: var(--background-none);
+ 
+   --button-secondary-accent-border-disabled: var(--border-none);
+   --button-secondary-accent-border-active: var(--accent-stronger);
+   --button-secondary-accent-border-hover: var(--accent-stronger);
+   --button-secondary-accent-border-default: var(--accent-strong);
 
   /* Button - Outline White Variant */
   --button-outline-white-text-disabled: var(--surface-disabled);
@@ -380,6 +403,46 @@
   --button-custom-bg-active: var(--shadow-accent-weak);
   --button-custom-bg-hover: var(--shadow-accent-weak);
   --button-custom-bg-default: var(--background-none);
+  /* Base Button Styles */
+/* Button s */
+--button-s-border-width: var(--border-width-s);
+--button-s-corner-radius: var(--border-radius-m);
+--button-s-padding-right: var(--spacing-2x);
+--button-s-padding-left: var(--spacing-2x);
+--button-s-spacing: var(--spacing-none);
+--button-s-min-width: var(--button-s-height);
+--button-s-height: var(--size-s);
+--button-s-label-padding-horizontal: var(--spacing-2x);
+
+/* Button m */
+--button-m-border-width: var(--border-width-s);
+--button-m-corner-radius: var(--border-radius-m);
+--button-m-padding-right: var(--spacing-3x);
+--button-m-padding-left: var(--spacing-3x);
+--button-m-spacing: var(--spacing-none);
+--button-m-min-width: var(--button-m-height);
+--button-m-height: var(--size-m);
+--button-m-label-padding-horizontal: var(--spacing-3x);
+
+/* Button l */
+--button-l-border-width: var(--border-width-s);
+--button-l-corner-radius: var(--border-radius-m);
+--button-l-padding-right: var(--spacing-4x);
+--button-l-padding-left: var(--spacing-4x);
+--button-l-spacing: var(--spacing-none);
+--button-l-min-width: var(--button-l-height);
+--button-l-height: var(--size-l);
+--button-l-label-padding-horizontal: var(--spacing-4x);
+
+/* Button xl */
+--button-xl-border-width: var(--border-width-s);
+--button-xl-corner-radius: var(--border-radius-m);
+--button-xl-padding-right: var(--spacing-5x);
+--button-xl-padding-left: var(--spacing-5x);
+--button-xl-spacing: var(--spacing-none);
+--button-xl-min-width: var(--button-xl-height);
+--button-xl-height: var(--size-xl);
+--button-xl-label-padding-horizontal: var(--spacing-5x);
 
   /* Currency Field Background */
   --currency-field-bg-default: var(--background-default);
@@ -410,6 +473,15 @@
   --currency-field-help-text-filled: var(--foreground-weakest);
   --currency-field-help-text-error: var(--foreground-error);
   --currency-field-help-text-disabled: var(--surface-disabled);
+
+  /* Currency Field spacing */
+--currency-field-border-width: var(--border-width-s);
+--currency-field-border-radius: var(--border-radius-m);
+--currency-field-height: var(--spacing-24x);
+--currency-field-padding-vertical: var(--spacing-2x);
+--currency-field-spacing: var(--spacing-1x);
+--currency-field-hint-padding-left: var(--spacing-4x);
+--currency-field-hint-padding-right: var(--spacing-4x);
 
 
   /* Navigation */
@@ -444,6 +516,63 @@
   --header-sub-overlay-bg: var(--border-strong);
   --header-sub-theme-text: var(--border-strong);
   --header-sub-secondary-text: var(--border-strong);
+
+   /* Effect Size / Background Blur */
+   --effect-none: 0;
+   --effect-small: 4px;
+   --effect-medium: 12px;
+   --effect-large: 32px;
+   --effect-xlarge: 64px;
+   --effect-custom: 999px;
+ 
+   /* Spacing */
+   --spacing-2x: 8px;
+   --spacing-3x: 12px;
+   --spacing-4x: 16px;
+   --spacing-5x: 20px;
+   --spacing-6x: 24px;
+   --spacing-8x: 32px;
+   --spacing-10x: 40px;
+   --spacing-12x: 48px;
+   --spacing-16x: 64px;
+   --spacing-20x: 80px;
+   --spacing-24x: 96px;
+   --spacing-32x: 128px;
+   --spacing-48x: 192px;
+   --spacing-50x: 200px;
+   --spacing-54x: 216px;
+   --spacing-base: 16px;
+   --spacing-infinity: 9999px;
+ 
+   /* Border Radius */
+   --border-radius-none: var(--spacing-none);
+   --border-radius-2xs: var(--spacing-0.5x);
+   --border-radius-xs: var(--spacing-1x);
+   --border-radius-s: var(--spacing-1.5x);
+   --border-radius-m: var(--spacing-2x);
+   --border-radius-l: var(--spacing-3x);
+   --border-radius-xl: var(--spacing-4x);
+   --border-radius-2xl: var(--spacing-5x);
+   --border-radius-3xl: var(--spacing-6x);
+   --border-radius-custom: var(--spacing-infinity);
+ 
+   /* Size */
+   --size-xl: 48px;
+   --size-l: 40px;
+   --size-m: 32px;
+   --size-m-chip: 32px;
+   --size-m-tag: 28px;
+   --size-s: 24px;
+   --size-xs: 20px;
+   --size-2xs: var(--size-base);
+   --size-base: 16px;
+
+   /* Border Width */
+--border-width-none: 0;
+--border-width-xs: var(--spacing-0-125x);
+--border-width-s: 1px;
+--border-width-m: var(--spacing-0-5x);
+--border-width-l: var(--spacing-1x);
 }
 
 /* Dark mode overrides */
@@ -617,6 +746,24 @@
   --button-outline-white-bg-active: var(--shadow-secondary-default);
   --button-outline-white-bg-hover: var(--shadow-secondary-default);
   --button-outline-white-bg-default: var(--background-none);
+   /* Button - Secondary Variant Dark Mode */
+   --button-secondary-accent-text-disabled: var(--surface-disabled);
+   --button-secondary-accent-text-active: var(--accent-stronger);
+   --button-secondary-accent-text-hover: var(--accent-stronger);
+   --button-secondary-accent-text-default: var(--accent-strong);
+ 
+   
+ 
+   --button-secondary-accent-border-disabled: var(--border-none);
+   --button-secondary-accent-border-active: var(--accent-stronger);
+   --button-secondary-accent-border-hover: var(--accent-stronger);
+   --button-secondary-accent-border-default: var(--accent-strong);
+ 
+   /* Button - Secondary Background Dark Mode */
+   --button-secondary-accent-bg-disabled: var(--surface-default);
+   --button-secondary-accent-bg-active: var(--shadow-accent-weak);
+   --button-secondary-accent-bg-hover: var(--shadow-accent-weak);
+   --button-secondary-accent-bg-default: var(--background-none);
 
   /* Button - Tertiary Accent Variant Dark Mode */
   --button-tertiary-accent-text-disabled: var(--surface-disabled);
@@ -657,6 +804,8 @@
   --button-custom-text-active: var(--white-4);
   --button-custom-text-hover: var(--primary-orange-overlay-12);
   --button-custom-text-default: var(--background-none);
+  
+
 
   /* Currency Field Dark Mode */
   --currency-field-bg-default: var(--background-default);

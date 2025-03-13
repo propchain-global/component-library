@@ -10,12 +10,14 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: "bg-button-accent-default hover:bg-button-accent-hover disabled:bg-button-accent-disabled text-button-accent-default hover:text-button-accent-hover disabled:text-button-accent-disabled",
+        secondary: "bg-button-secondary-default hover:bg-button-secondary-hover disabled:bg-button-secondary-disabled text-button-secondary-default hover:text-button-secondary-hover disabled:text-button-secondary-disabled border-button-secondary-default hover:border-button-secondary-hover disabled:border-button-secondary-disabled",
         default: "bg-button-accent-default hover:bg-button-accent-hover disabled:bg-button-accent-disabled text-button-accent-default hover:text-button-accent-hover disabled:text-button-accent-disabled",
         alert:
           "bg-button-tertiary-alert-default hover:bg-button-tertiary-alert-hover disabled:bg-button-tertiary-alert-disabled text-button-tertiary-alert-default hover:text-button-tertiary-alert-hover disabled:text-button-tertiary-alert-disabled",
         outline:
           "border border-button-outline-neutral-default hover:border-button-outline-neutral-hover disabled:bg-button-outline-neutral-disabled text-button-outline-neutral-default text-button-outline-neutral-default hover:text-button-outline-neutral-hover disabled:text-button-outline-neutral-disabled bg-button-outline-neutral-default hover:bg-button-outline-neutral-hover",
         link: "text-button-link-neutral-default hover:text-button-link-neutral-hover disabled:text-button-link-neutral-disabled",
+        tertiary: "bg-button-tertiary-accent-default hover:bg-button-tertiary-accent-hover disabled:bg-button-tertiary-accent-disabled text-button-tertiary-accent-default hover:text-button-tertiary-accent-hover disabled:text-button-tertiary-accent-disabled",
       },
       size: {
         xl: "text-body-m-strong px-4x py-3x",
@@ -28,6 +30,28 @@ const buttonVariants = cva(
       variant: "primary",
       size: "xl",
     },
+    compoundVariants: [
+      {
+        variant: "secondary",
+        size: "xl",
+        className: "border-button-xl",
+      },
+      {
+        variant: "secondary",
+        size: "l",
+        className: "border-button-l",
+      },
+      {
+        variant: "secondary",
+        size: "m",
+        className: "border-button-m",
+      },
+      {
+        variant: "secondary",
+        size: "s",
+        className: "border-button-s",
+      },
+    ],
   }
 );
 

@@ -16,7 +16,7 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     variant: {
-      options: ['primary','alert', 'outline', 'link']
+      options: ['primary','alert', 'outline', 'link', 'secondary', 'tertiary']
     },
     IconLeft: { control: false }
   }
