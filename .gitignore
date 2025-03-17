@@ -42,5 +42,5 @@ next-env.d.ts
 /storybook-static
 *storybook.log
 /storybook-static
-/dist/storybook
-.firebase/
+/dist/storybook/
+.firebase
