@@ -11,7 +11,7 @@ const config: StorybookConfig = {
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
     "@storybook/addon-themes",
-    "storybook-theme-switch-addon"
+    "storybook-addon-data-theme-switcher",
   ],
   framework: {
     name: "@storybook/nextjs",

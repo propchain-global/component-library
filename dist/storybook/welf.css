@@ -1,4 +1,5 @@
-:root {
+
+html[data-theme="welf"] {
   /* Primary Lime */
   --primary-lime-100: #081207;
   --primary-lime-90: #11240d;
@@ -576,7 +577,7 @@
 }
 
 /* Dark mode overrides */
-.dark {
+html[data-theme="welf"] .dark {
   --accent-default: var(--primary-lime-60);
   --accent-strong: var(--primary-lime-base);
   --accent-stronger: var(--primary-lime-30);
