@@ -17,7 +17,7 @@ const buttonVariants = cva(
         outline:
           "border border-button-outline-neutral-default hover:border-button-outline-neutral-hover disabled:bg-button-outline-neutral-disabled text-button-outline-neutral-default text-button-outline-neutral-default hover:text-button-outline-neutral-hover disabled:text-button-outline-neutral-disabled bg-button-outline-neutral-default hover:bg-button-outline-neutral-hover",
         link: "text-button-link-neutral-default hover:text-button-link-neutral-hover disabled:text-button-link-neutral-disabled",
-        tertiary: "bg-button-tertiary-accent-default hover:bg-button-tertiary-accent-hover disabled:bg-button-tertiary-accent-disabled text-button-tertiary-accent-default hover:text-button-tertiary-accent-hover disabled:text-button-tertiary-accent-disabled",
+        tertiary : "bg-button-tertiary-accent-default hover:bg-button-tertiary-accent-hover disabled:bg-button-tertiary-accent-disabled text-button-tertiary-accent-default hover:text-button-tertiary-accent-hover disabled:text-button-tertiary-accent-disabled disabled:border-button-tertiary-accent-disabled hover:border-button-tertiary-accent-hover"
       },
       size: {
         xl: "text-body-m-strong px-4x py-3x",
@@ -70,7 +70,7 @@ export interface ButtonProps
   IconRight?: React.JSXElementConstructor<{className?: string}>;
   is_loading?: boolean;
   size?: "xl" | "l" | "m" | "s";
-  variant?: "primary" | "alert" | "outline" | "link";
+  variant?: "primary" | "alert" | "outline" | "link" | "tertiary";
   disabled?: boolean;
 }
 
