@@ -1,4 +1,4 @@
-:root {
+html[data-theme="propchain"] {
   /* Primary Orange */
   --primary-orange-100: #332601;
   --primary-orange-90: #553F02;
@@ -604,7 +604,7 @@
 }
 
 /* Dark mode overrides */
-.dark {
+html[data-theme="propchain"] .dark {
 
   /* DARK currency field */
 
@@ -945,5 +945,6 @@
   --button-secondary-accent-bg-hover: var(--shadow-accent-weak);
   --button-secondary-accent-bg-default: var(--background-none);
 }
+
 
 
