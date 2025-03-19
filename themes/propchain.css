@@ -478,14 +478,18 @@ html[data-theme="propchain"] {
 --currency-field-hint-padding-right: var(--spacing-4x);
 
 /* Navigation */
---navigation-bg: rgba(255, 255, 255, 0.16);
---navigation-menu-bg: rgba(0, 0, 0, 0);
---navigation-hover-bg: rgba(255, 255, 255, 0.28);
---navigation-active-bg: var(--system-yellow-base);
-
---navigation-icon-default: var(--white-100);
---navigation-icon-hover: var(--white-100);
---navigation-icon-active: var(--black-100);
+--navigation-text-default: var(--foreground-white);
+--navigation-text-hover: var(--foreground-warning-on-surface);
+--navigation-text-active: var(--foreground-inverse);
+--navigation-background-default: var(--background-white);
+--navigation-background-hover: var(--background-white);
+--navigation-background-active: var(--accent-default);
+--navigation-border-default: var(--border-accent);
+--navigation-border-hover: var(--border-accent);
+--navigation-border-active: var(--border-accent);
+--navigation-icon-default: var(--foreground-white);
+--navigation-icon-hover: var(--foreground-default);
+--navigation-icon-active: var(--foreground-inverse);
 
 /* Background Texture */
 --bg-texture-background: #000000;
@@ -582,6 +586,20 @@ html[data-theme="propchain"] {
 --banner-staking-why-stake-background-default: var(--background-white);
 --banner-staking-why-stake-background-active: var(--background-white);
 --banner-staking-why-stake-background-disabled: var(--background-disabled);
+
+/* Header Components - Light Mode */
+--header-background-default: var(--background-inverted);
+--header-background-white: var(--foreground-white);
+--header-text-default: var(--foreground-white);
+--header-icon-default: var(--foreground-white);
+--header-icon-black: var(--foreground-default);
+--header-border-default: var(--border-accent);
+
+--header-sub-theme-bg: var(--border-strong);
+--header-sub-secondary-bg: var(--black-4);
+--header-sub-overlay-bg: var(--black-16);
+--header-sub-theme-text: var(--foreground-white);
+--header-sub-secondary-text: var(--foreground-white);
 
 /* Spacing */
 --spacing-none: 0;
@@ -903,14 +921,18 @@ html[data-theme="propchain"] .dark {
 --currency-field-hint-padding-right: var(--spacing-4x);
 
   /* Navigation Dark Mode */
-  --navigation-bg: rgba(255, 255, 255, 0.16);
-  --navigation-menu-bg: rgba(0, 0, 0, 0);
-  --navigation-hover-bg: rgba(255, 255, 255, 0.28);
-  --navigation-active-bg: var(--system-yellow-base);
-
-  --navigation-icon-default: var(--white-100);
-  --navigation-icon-hover: var(--white-100);
-  --navigation-icon-active: var(--black-100);
+  --navigation-text-default: var(--foreground-white);
+  --navigation-text-hover: var(--foreground-link);
+  --navigation-text-active: var(--foreground-on-accent);
+  --navigation-background-default: var(--background-primary);
+  --navigation-background-hover: var(--background-weak);
+  --navigation-background-active: var(--accent-default);
+  --navigation-border-default: var(--white-none);
+  --navigation-border-hover: var(--background-weak);
+  --navigation-border-active: var(--border-accent);
+  --navigation-icon-default: var(--foreground-white);
+  --navigation-icon-hover: var(--foreground-default);
+  --navigation-icon-active: var(--foreground-on-accent);
 
   /* Background Texture Dark Mode */
   --bg-texture-background: #000000;
@@ -1009,6 +1031,23 @@ html[data-theme="propchain"] .dark {
   --banner-staking-why-stake-background-default: var(--background-weak);
   --banner-staking-why-stake-background-active: var(--background-weak);
   --banner-staking-why-stake-background-disabled: var(--background-disabled);
+
+  /* Header Components - Dark Mode */
+  --header-background-default: var(--background-weak);
+  --header-background-white: var(--white-16);
+  
+  --header-text-default: var(--foreground-white);
+  
+  --header-icon-default: var(--foreground-white);
+  --header-icon-black: var(--foreground-default);
+  
+  --header-border-default: var(--border-none);
+
+  --header-sub-theme-bg: var(--white-4);
+--header-sub-secondary-bg: var(--white-4);
+--header-sub-overlay-bg: var(--white-16);
+--header-sub-theme-text: var(--foreground-white);
+--header-sub-secondary-text: var(--foreground-white);
 }
 
 
