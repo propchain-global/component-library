@@ -442,6 +442,14 @@ export default {
                     'staking-why-stake-active': 'var(--banner-staking-why-stake-background-active)',
                     'staking-why-stake-disabled': 'var(--banner-staking-why-stake-background-disabled)',
                 },
+                'navigation': {
+                    default: 'var(--navigation-background-default)',
+                    hover: 'var(--navigation-background-hover)',
+                },
+                'header': {
+                    default: 'var(--header-background-default)',
+                    white: 'var(--header-background-white)',
+                },
             },
             textColor: {
                 primary: 'var(--primary-lime-overlay-24)',
@@ -602,6 +610,22 @@ export default {
                     'staking-why-stake-active': 'var(--banner-staking-why-stake-text-active)',
                     'staking-why-stake-disabled': 'var(--banner-staking-why-stake-text-disabled)',
                 },
+                'navigation': {
+                    default: 'var(--navigation-text-default)',
+                    hover: 'var(--navigation-text-hover)',
+                    icon: {
+                        default: 'var(--navigation-icon-default)',
+                        hover: 'var(--navigation-icon-hover)',
+                    }
+                   
+                },
+                'header': {
+                    default: 'var(--header-text-default)',
+                    icon: {
+                        default: 'var(--header-icon-default)',
+                        black: 'var(--header-icon-black)',
+                    }
+                }
             },
 
             borderColor: {
@@ -683,6 +707,14 @@ export default {
                     light: 'var(--border-strong)',
                     dark: 'var(--border-strong)',
                 },
+                'navigation': {
+                    default: 'var(--navigation-border-default)',
+                    hover: 'var(--navigation-border-hover)',
+                    active: 'var(--navigation-border-active)',
+                },
+                'header': {
+                    default: 'var(--header-border-default)',
+                }
             },
             surfaceColor: {
                 accent: 'var(--surface-accent)',

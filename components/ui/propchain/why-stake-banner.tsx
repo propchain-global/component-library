@@ -27,7 +27,7 @@ const options = [
 
 export default function WhyStakeBanner() {
   return (
-    <div className='flex flex-col gap-6x p-8x rounded-2xl bg-banner-staking-why-stake-default relative w-full overflow-hidden'>
+    <div className='flex flex-col gap-6x  p-6x md:p-8x rounded-2xl bg-banner-staking-why-stake-default relative w-full overflow-hidden'>
       <div className='flex justify-between'>
           <h2 className='text-heading-h2 text-banner-staking-why-stake-default'>
             Why Stake?
@@ -44,7 +44,7 @@ export default function WhyStakeBanner() {
       <div className="grid grid-cols-2 gap-y-4x md:gap-y-6x gap-x-4x md:gap-x-10x md:max-w-[66%]">
          {options.map((option) => (
             <div className='flex flex-col md:flex-row items-start md:items-center gap-4x'>
-               <div className="w-12x h-12x p-3x rounded-full flex items-center justify-center bg-weaker">
+               <div className="min-w-12x min-h-12x p-3x rounded-full flex items-center justify-center bg-weaker">
 
                <option.icon className='text-accent-default w-4 h-4 ' />
                </div>
@@ -59,7 +59,8 @@ export default function WhyStakeBanner() {
       <div className='h-[108px] w-full md:hidden'>
 
       </div>
-      <Image src="/propchain/why-stake.png" alt="staking-banner-bg" width={238} height={150} className='absolute bottom-0 right-0' />
+      <Image src="/propchain/why-stake.png" alt="staking-banner-bg" width={238} height={150} className='absolute bottom-0 right-0 hidden md:block' />
+      <Image src="/propchain/why-stake-sm.svg" alt="staking-banner-bg" width={238} height={150} className='absolute bottom-0 right-0 block md:hidden' />
     </div>
   )
 }
