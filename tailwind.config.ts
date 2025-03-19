@@ -193,7 +193,7 @@ export default {
                     background: 'var(--border-strong)',
                     text: 'var(--border-strong)',
                     heading: 'var(--border-strong)',
-                    'value-proposition': 'var(--border-strong)',
+                    'value-proposition': 'var(--banners-value-proposition)',
                     icon: 'var(--border-strong)',
                     style: 'var(--border-strong)',
                 },
@@ -425,6 +425,23 @@ export default {
                         filled: 'var(--currency-field-bg-filled)',
                         error: 'var(--currency-field-bg-error)',
                 },
+                banner: {
+                    'welcome-default': 'var(--banner-welcome-background-default)',
+                    'welcome-active': 'var(--banner-welcome-background-active)',
+                    'welcome-disabled': 'var(--banner-welcome-background-disabled)',
+                    
+                    'earn-rewards-default': 'var(--banner-earn-rewards-background-default)',
+                    'earn-rewards-active': 'var(--banner-earn-rewards-background-active)',
+                    'earn-rewards-disabled': 'var(--banner-earn-rewards-background-disabled)',
+                    
+                    'staking-welcome-default': 'var(--banner-staking-welcome-background-default)',
+                    'staking-welcome-active': 'var(--banner-staking-welcome-background-active)',
+                    'staking-welcome-disabled': 'var(--banner-staking-welcome-background-disabled)',
+                    
+                    'staking-why-stake-default': 'var(--banner-staking-why-stake-background-default)',
+                    'staking-why-stake-active': 'var(--banner-staking-why-stake-background-active)',
+                    'staking-why-stake-disabled': 'var(--banner-staking-why-stake-background-disabled)',
+                },
             },
             textColor: {
                 primary: 'var(--primary-lime-overlay-24)',
@@ -567,6 +584,23 @@ export default {
                     warning: 'var(--pill-icon-secondary-warning)',
                     success: 'var(--pill-icon-secondary-success)',
                     error: 'var(--pill-icon-secondary-error)',
+                },
+                banner: {
+                    'welcome-default': 'var(--banner-welcome-text-default)',
+                    'welcome-active': 'var(--banner-welcome-text-active)',
+                    'welcome-disabled': 'var(--banner-welcome-text-disabled)',
+                    
+                    'earn-rewards-default': 'var(--banner-earn-rewards-text-default)',
+                    'earn-rewards-active': 'var(--banner-earn-rewards-text-active)',
+                    'earn-rewards-disabled': 'var(--banner-earn-rewards-text-disabled)',
+                    
+                    'staking-welcome-default': 'var(--banner-staking-welcome-text-default)',
+                    'staking-welcome-active': 'var(--banner-staking-welcome-text-active)',
+                    'staking-welcome-disabled': 'var(--banner-staking-welcome-text-disabled)',
+                    
+                    'staking-why-stake-default': 'var(--banner-staking-why-stake-text-default)',
+                    'staking-why-stake-active': 'var(--banner-staking-why-stake-text-active)',
+                    'staking-why-stake-disabled': 'var(--banner-staking-why-stake-text-disabled)',
                 },
             },
 
@@ -1302,7 +1336,11 @@ export default {
             'nav-radial-gradient-hover': 'radial-gradient(131.23% 65% at 50% 50%, rgba(84, 179, 66, 0.48) 0%, rgba(84, 179, 66, 0.00) 100%) ',
             'surface-gradient': 'linear-gradient(113deg, rgba(255, 255, 255, 0.05) 15.05%, rgba(255, 255, 255, 0.08) 84.94%)',
             'gradinet-surface-linear': 'linear-gradient(113deg, rgba(255, 255, 255, 0.05) 15.05%, rgba(255, 255, 255, 0.08) 84.94%)',
-            'portfolio-info-blur-bg': 'linear-gradient(180deg, rgba(16, 35, 32, 0.32) 0%, #102320 64.64%)'
+            'portfolio-info-blur-bg': 'linear-gradient(180deg, rgba(16, 35, 32, 0.32) 0%, #102320 64.64%)',
+            'prop-welcome-banner':'var(--welcome-banner-bg)',
+            'prop-welcome-banner-sm':'var(--welcome-banner-bg-small)',
+            'prop-earn-rewards-banner':'var(--earn-rewards-banner-bg)',
+            'prop-earn-rewards-banner-sm':'var(--earn-rewards-banner-bg-small)',
         },
     },
     // eslint-disable-next-line @typescript-eslint/no-require-imports

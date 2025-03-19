@@ -1,10 +1,10 @@
-import { Footer } from '@/components/ui/footer';
+import { Footer } from '@/components/ui/welf/footer';
 import type { Meta, StoryObj } from '@storybook/react';
 
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Global Design Toolkit/Controls/Footer',  
+  title: 'WELF Global Design Toolkit/Controls/Footer',  
   component: Footer,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout

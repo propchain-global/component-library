@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
-import { Avatar } from './avatar'
-import { Badge } from './badge';
+import { Avatar } from '../avatar'
+import { Badge } from '../badge';
 import { LucideArrowRight, LucidePower } from 'lucide-react';
 type WalletConnectTabProps = {
    type: "default" | "connected" | "recent" | "failed" | 'detected'

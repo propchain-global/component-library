@@ -1,11 +1,11 @@
-import { StakeUnstackCard } from '@/components/ui/stake-unstake-card';
+import { StakeUnstackCard } from '@/components/ui/welf/stake-unstake-card';
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Global Design Toolkit/ view / stake unstake card ',  
+  title: 'WELF Global Design Toolkit/ view / stake unstake card ',  
   component: StakeUnstackCard,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout

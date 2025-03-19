@@ -2,7 +2,7 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 import { cva, VariantProps } from "class-variance-authority"
-import { Avatar } from "./avatar"
+import { Avatar } from "../avatar"
 import { LucideChevronDown } from "lucide-react"
 
 const containerVariant = cva("flex items-center rounded-Button-xl border-Button-xl ", {

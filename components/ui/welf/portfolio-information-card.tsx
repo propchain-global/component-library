@@ -2,11 +2,10 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 import { cva, VariantProps } from "class-variance-authority"
-import { Avatar } from "./avatar"
 import { ArrowUpRight, ArrowDownLeft, LockIcon, WalletIcon, GiftIcon, AlarmClock, ChevronRight } from "lucide-react"
-import { Badge } from "./badge"
-import { Button } from "./button"
-import Image from "next/image";
+import { Badge } from "../badge"
+import { Button } from "../button"
+import Image from "next/image";     
 
 const containerVariant = cva("flex items-center rounded-Button-xl border-Button-xl ", {
    variants: {
@@ -83,7 +82,7 @@ const PortfolioInformationWrapper = React.forwardRef<HTMLDivElement, PortfolioIn
          </div>
 
          <div className="flex flex-col gap-4x grow w-[332px] relative overflow-hidden">
-            <div className="md:h-[154px] gap-5px p-5x flex justify-between border border-default rounded-xl bg-weaker backdrop-filter-m border flex flex-col justify-between">
+            <div className="md:h-[154px] gap-5px p-5x flex justify-between border border-default rounded-xl bg-weaker backdrop-filter-m   flex-col">
                <div className="flex justify-between items-center gap-2x mb-3x">
                   <div className="text-body-m-medium text-foreground-weakest">
                      Staking Reward
@@ -98,7 +97,7 @@ const PortfolioInformationWrapper = React.forwardRef<HTMLDivElement, PortfolioIn
                   <div className="text-body-s-medium text-foreground-weakest mt-1x">WELF</div>
                </div>
             </div>
-            <div className="md:h-[154px] gap-5px p-5x flex justify-between border border-default rounded-xl bg-weaker backdrop-filter-m border flex flex-col justify-between">
+            <div className="md:h-[154px] gap-5px p-5x flex justify-between border border-default rounded-xl bg-weaker backdrop-filter-m   flex-col">
                <div className="flex justify-between items-center gap-2x mb-3x">
                   <div className="text-body-m-medium text-foreground-weakest">
                      Next Claim
