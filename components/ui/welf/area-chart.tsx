@@ -8,7 +8,7 @@ import {
     ChartContainer,
     ChartTooltip,
     ChartTooltipContent,
-} from '@/components/ui/chart';
+} from '@/components/ui/welf/chart';
 const chartData = [
     [1736741034624, 1.3096860198911147],
     [1736744672290, 1.3100485496932617],

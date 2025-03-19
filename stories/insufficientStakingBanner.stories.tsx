@@ -1,11 +1,11 @@
-import { InsufficientStakingBanner } from '@/components/ui/insufficient-staking-banner';
+import { InsufficientStakingBanner } from '@/components/ui/welf/insufficient-staking-banner';
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Global Design Toolkit/ view / Insufficient staking banner ',  
+  title: 'WELF Global Design Toolkit/ view / Insufficient staking banner ',  
   component: InsufficientStakingBanner,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout

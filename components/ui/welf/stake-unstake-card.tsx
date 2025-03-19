@@ -5,7 +5,7 @@ import { cva, VariantProps } from "class-variance-authority"
 import { LockIcon, UnlockIcon, GiftIcon, WalletIcon, HandCoins } from "lucide-react"
 import { NavigationBar } from "./navigation-bar";
 import { PoolCard } from "./pool-card";
-import { Button } from "./button";
+import { Button } from "../button";
 import Image from "next/image";
 
 interface poolProps {

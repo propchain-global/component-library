@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import { NavigationBar } from './navigation-bar';
 import { LucideLayers, LucideLayoutDashboard } from 'lucide-react';
-import { Button } from './button';
+import { Button } from '../button';
 import { WalletConnected } from './wallet-connected';
 import { IconButton } from './icon-button';
 interface HeaderProps {

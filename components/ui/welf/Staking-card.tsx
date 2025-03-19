@@ -1,9 +1,9 @@
 import * as React from "react";
 import { cn } from "@/lib/utils"
-import { Badge } from "./badge";
+import { Badge } from "../badge";
 import { ArrowUpRight, ArrowDownLeft, Wallet } from "lucide-react";
 import Image from "next/image";
-import { Button } from "./button";
+import { Button } from "../button";
 
 interface stakingProps {
   stakedWelf: number,

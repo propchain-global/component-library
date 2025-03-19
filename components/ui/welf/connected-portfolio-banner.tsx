@@ -1,7 +1,7 @@
 import React, { Suspense, useMemo } from 'react';
 import Image from 'next/image';
-import { Badge } from './badge';
-import { Button } from './button';
+import { Badge } from '../badge';
+import { Button } from '../button';
 import PortfolioInfoCard from './portfolio-info-card';
 // import RewardHistoryPopup from './RewardHistoryPopup';
 // import StakingHistoryPopup from './StakingHistoryPopup';

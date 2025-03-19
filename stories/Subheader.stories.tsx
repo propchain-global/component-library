@@ -1,4 +1,4 @@
-import { Subheader } from '@/components/ui/subheader';
+import { Subheader } from '@/components/ui/welf/subheader';
 import type { Meta, StoryObj } from '@storybook/react';
 const dummyMarketInfo = [
    {
@@ -34,7 +34,7 @@ const dummyMarketInfo = [
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Global Design Toolkit/Controls/Subheader',  
+  title: 'WELF Global Design Toolkit/Controls/Subheader',  
   component: Subheader,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout

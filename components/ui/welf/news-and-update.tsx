@@ -11,7 +11,7 @@ import {
   useCarousel,
 } from "@/components/ui/carousel"
 import { LucideChevronLeft, LucideChevronRight } from "lucide-react";
-import { Button } from "./button";
+import { Button } from "../button";
 
 
 interface newsDataProps {

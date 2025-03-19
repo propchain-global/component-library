@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
-import { Tab } from './tab';
-import { Badge } from './badge';
+import { Tab } from '../tab';
+import { Badge } from '../badge';
 import {  LucideArrowDownLeft } from 'lucide-react';
 import { AreaChartComponent } from './area-chart';
 interface PriceChartProps {

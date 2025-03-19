@@ -4,7 +4,7 @@ import * as React from "react"
 import * as RechartsPrimitive from "recharts"
 import { format } from 'date-fns'
 import { cn } from "@/lib/utils"
-import { Badge } from "./badge"
+import { Badge } from "../badge"
 import { LucideArrowDownLeft, LucideArrowUpRight } from "lucide-react"
 
 // Format: { THEME_NAME: CSS_SELECTOR }
