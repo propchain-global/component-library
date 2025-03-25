@@ -6,7 +6,7 @@ import PortfolioInfoCard from './portfolio-info-card';
 // import RewardHistoryPopup from './RewardHistoryPopup';
 // import StakingHistoryPopup from './StakingHistoryPopup';
 import { MoveHorizontal, ArrowUpRight, ArrowDownLeft, LucideChevronDown, LucideChevronUp } from 'lucide-react';
-// import BuyWelfModal from './buyWelfModalNew';
+// import BuyWelfModal from './buyWelfModal';
 
 export type PoolInfo = {
   formattedDurations: string[];

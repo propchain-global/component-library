@@ -27,7 +27,13 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    
+    usdBalance : {
+      currentBalance: '0',
+      percentageDiff:   '0',
+      pastBalanceNumber: 0,
+      currentBalanceNumber:   '0'
+    },
+    user : '0x12323'
   },
 };
 

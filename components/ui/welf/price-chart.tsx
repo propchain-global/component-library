@@ -1,109 +1,158 @@
-import React, { useMemo } from 'react'
-import { Tab } from '../tab';
-import { Badge } from '../badge';
-import {  LucideArrowDownLeft } from 'lucide-react';
-import { AreaChartComponent } from './area-chart';
-interface PriceChartProps {
-   token: string;
-   activeTab: 'M' | 'W' | 'D' | 'Y'
-   price: number;
-   low24: number;
-   high24: number;
-   change24: number;
-   totalSupply: number;
-   volume: number;
-   marketCap: number;
-   circulatingSupply: number;
-   chartData?: [number, number][]
-   xkey?: string | number
-   ykey?: string | number
+import React, { ReactNode } from "react";
+
+import { Badge } from "../badge";
+import {
+  LucideArrowDownLeft,
+  LucideArrowUpRight,
+  LucideCloudDrizzle,
+  LucideFlame,
+  LucideGalleryVerticalEnd,
+  LucideIterationCcw,
+  LucideUsersRound,
+} from "lucide-react";
+import { AreaChartComponent } from "./area-chart";
+
+import ChartTab from "./charttab";
+import Image from "next/image";
+import { PriceDataResponse } from "@/types/portfolio";
+import { PriceRange } from "./price-range";
+
+interface DetailsCardProps {
+  title: string;
+  value: string;
+  icon: ReactNode;
 }
-const tabs = ['M', 'W', 'D', 'Y']
-export const PriceChart = ({token, activeTab, price, low24, high24, change24, totalSupply, volume, marketCap, circulatingSupply, chartData, xkey, ykey}: PriceChartProps) => {
-   const cards = useMemo(()=> {
-      return [
-         {
-            title: 'Market Cap',
-            value: marketCap.toLocaleString('en-US', {style: 'currency', currency: 'USD'})
-         },
-         {
-            title: 'Volume (24h)',
-            value: volume.toLocaleString('en-US', {style: 'currency', currency: 'USD'})
-         },
-         {
-            title: 'Total Supply',
-            value: totalSupply.toLocaleString('en-US')
-         },
-         {
-            title: 'Circulating Supply',
-            value: circulatingSupply.toLocaleString('en-US')
-         }
-      ]
-   }, [totalSupply, circulatingSupply, volume, marketCap])
+const DetailsCard = ({ title, value, icon }: DetailsCardProps) => {
   return (
-    <div className='bg-weaker rounded-xl border border-default'>
-      {/* chart section */}   
-      <div className="flex flex-col gap-8x p-4x md:gap-12x md:p-6x rounded-xl   ">
-         <div className="flex flex-col gap-2x">
-         {/* control section */}
-         <div className="flex justify-between">
-            <p className="text-body-m-medium text-weakest">{token} Price</p>
-            <div className="flex gap-1x">
-               {tabs.map((tab) => (
-                  <Tab key={tab} isActive={activeTab === tab}>{tab}</Tab>
-               ))}
-            </div>
-         </div>
-         {/* control section end */}
-         {/* price section */}
-         <div className="flex justify-between">
-            <div className="flex gap-3x items-center">
-               <p className="font text-number-s text-weak">${price}</p>
-               <div className="py-2x flex flex-col justify-end">
+    <div className="p-4 rounded-md bg-surface-gradient">
+      <div className="flex items-center gap-1 text-foreground-weaker">
+        {icon}
 
-               <Badge size='s' variant="secondary-info" >
-                  <LucideArrowDownLeft className='w-3x h-3x' />
-                  {change24}% (1d)
-               </Badge>
-               </div>
-
-            </div>
-
-            <div className="flex gap-4x items-center py-1x">
-               <div className="flex items-center gap-1x">
-                  <p className="text-body-m-medium text-weakest">L: </p>
-                  <p className="text-body-m-medium text-weak">${low24}</p>
-               </div>
-               <div className="flex items-center gap-1x">
-                  <p className="text-body-m-medium text-weakest">H: </p>
-                  <p className="text-body-m-medium text-weak">${high24}</p>
-               </div>
-            </div>
-
-         </div>
-         {/* price section end */}
-         </div>
-
-            <AreaChartComponent data={chartData} xkey={xkey} ykey={ykey} />
-
+        <div className="text-description-l-medium">{title}</div>
       </div>
-      {/* chart section end */}
-      <div className="p-4x md:p-6x gap-2x grid grid-cols-2 md:grid-cols-4  border-default border-t ">
-         {cards.map((card, index) => (
-            <div key={index} className="flex flex-col gap-2x p-4x rounded-md bg-surface-gradient">
-               <p className="text-body-s text-weakest">{card.title}</p>
-               <p className="text-body-m-strong text-weak">{card.value}</p>
-            </div>
-         ))}
-      </div>
-      <div className="p-4x md:p-6x gap-2x flex flex-col md:hidden">
-         {cards.map((card, index) => (
-            <div key={index} className="flex justify-between items-center gap-2x p-4x rounded-md bg-surface-gradient">
-               <p className="text-body-s text-weakest">{card.title}</p>
-               <p className="text-body-s-strong text-weak">{card.value}</p>
-            </div>
-         ))}
+
+      <div className="mt-2 text-body-m-strong text-foreground-weak">
+        {value}
       </div>
     </div>
-  )
-}
+  );
+};
+
+export const PriceChart = ({ ...priceData }: PriceDataResponse) => {
+  return (
+    <div className="bg-weaker rounded-xl border border-default">
+      {/* chart section */}
+      <div className="flex flex-col gap-8x p-4x md:gap-12x md:p-6x rounded-xl">
+        <div className="grid grid-cols-2 gap-2">
+          <p className="flex items-center text-body-m-medium text-weakest">
+            WELF Price
+          </p>
+          {/* control section */}
+          <div className="grid grid-cols-4 md:grid-cols-[auto_auto_auto_auto] gap-2 justify-end order-4 md:order-none col-span-full md:col-span-1 pt-2 md:pt-0">
+            <ChartTab />
+          </div>
+          {/* control section end */}
+
+          {/* price section */}
+          <div className="flex gap-3x items-center order-3 md:order-none col-span-full md:col-span-1">
+            <p className="font text-number-s text-weak">
+              ${priceData?.market_data?.welf?.current_price_usd}
+            </p>
+            <div className="py-2x flex flex-col justify-end">
+              <Badge
+                size="s"
+                variant={
+                  priceData?.market_data?.welf?.change_percentage_24h > 0
+                    ? "secondary-info"
+                    : "secondary-error"
+                }
+              >
+                {priceData?.market_data?.welf?.change_percentage_24h > 0 ? (
+                  <LucideArrowUpRight className="w-3x h-3x" />
+                ) : (
+                  <LucideArrowDownLeft className="w-3x h-3x" />
+                )}
+                {priceData?.market_data?.welf?.change_percentage_24h.toFixed(2)}
+                % (1d)
+              </Badge>
+            </div>
+          </div>
+
+          <PriceRange marketCharts={priceData?.market_charts} />
+
+          {/* price section end */}
+        </div>
+
+        <AreaChartComponent data={priceData?.market_charts}  />
+      </div>
+      {/* chart section end */}
+
+      <div className="grid grid-cols-2 md:grid-cols-4 p-5 md:p-6 border-t border-default gap-2">
+        <div className="flex flex-col gap-2">
+          <DetailsCard
+            title="Maximum Supply"
+            value={priceData?.maxSupplyUsd}
+            icon={<LucideGalleryVerticalEnd size={12} />}
+          />
+          <DetailsCard
+            title="Circulating Supply"
+            value={priceData?.circulatingSupply}
+            icon={<LucideIterationCcw size={12} />}
+          />
+        </div>
+        <div className="flex flex-col gap-2">
+          <DetailsCard
+            title="Total Token Supply"
+            value={priceData?.totalSupplyUsd}
+            icon={<LucideCloudDrizzle size={12} />}
+          />
+          <DetailsCard
+            title="Burned Token"
+            value={priceData?.burned_tokens}
+            icon={<LucideFlame size={12} />}
+          />
+        </div>
+
+        <div className="relative p-4 rounded-md bg-surface-gradient overflow-hidden h-[168px]">
+          <div className="flex items-center gap-1 text-foreground-weaker">
+            <LucideUsersRound size={12} />
+
+            <div className="text-description-l-medium">Total Token Holders</div>
+          </div>
+
+          <div className="mt-2 text-body-m-strong text-foreground-weak">
+            {priceData?.tokenHolders}
+          </div>
+
+          <Image
+            src="/card-chart.svg"
+            alt=""
+            height={89}
+            width={212}
+            className="absolute w-full h-auto bottom-0 left-0"
+          />
+        </div>
+
+        <div className="relative p-4 rounded-md bg-surface-gradient overflow-hidden h-[168px]">
+          <div className="flex items-center gap-1 text-foreground-weaker">
+            <Image src="/stake-2.svg" alt="" height={12} width={12} />
+
+            <div className="text-description-l-medium">WELF Stacked</div>
+          </div>
+
+          <div className="mt-2 text-body-m-strong text-foreground-weak">
+            {priceData?.totalStaked}
+          </div>
+
+          <Image
+            src="/welf-token-big.svg"
+            alt=""
+            height={120}
+            width={126}
+            className="absolute bottom-0 right-0"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
