@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { Button } from '../button'
+import { Button } from '@/components/ui/button'
 import { LucideCircle } from 'lucide-react'
 
 

@@ -1,6 +1,6 @@
 import { LucideCheck, LucideCheckCheck, LucideCheckCircle, LucideCheckCircle2, LucideCircle, LucideCircleCheck } from 'lucide-react'
 import React from 'react'
-import { Button } from '../button'
+import { Button } from '@/components/ui/button'
 export const listOption = [
    'Stake and unstake anytime',
    'Longer staking = Higher rewards',
