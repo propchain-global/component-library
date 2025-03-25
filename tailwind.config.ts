@@ -208,20 +208,20 @@ export default {
                     accent: 'var(--surface-accent)',
                 },
                 foreground: {
-                  default: 'var(--foreground-default)',
-                onAccent: 'var(--foreground-on-accent)',
-                weak: 'var(--foreground-weak)',
-                weaker: 'var(--foreground-weaker)',
-                weakest: 'var(--foreground-weakest)',
-                inverse: 'var(--foreground-inverse)',
-                white: 'var(--foreground-white)',
-                success: 'var(--foreground-success)',
-                successOnSurface: 'var(--foreground-success-on-surface)',
-                warning: 'var(--foreground-warning)',
-                warningOnSurface: 'var(--foreground-warning-on-surface)',
-                error: 'var(--foreground-error)',
-                errorOnSurface: 'var(--foreground-error-on-surface)',
-                link: 'var(--foreground-link)',
+                    default: 'var(--foreground-default)',
+                    onAccent: 'var(--foreground-on-accent)',
+                    weak: 'var(--foreground-weak)',
+                    weaker: 'var(--foreground-weaker)',
+                    weakest: 'var(--foreground-weakest)',
+                    inverse: 'var(--foreground-inverse)',
+                    white: 'var(--foreground-white)',
+                    success: 'var(--foreground-success)',
+                    successOnSurface: 'var(--foreground-success-on-surface)',
+                    warning: 'var(--foreground-warning)',
+                    warningOnSurface: 'var(--foreground-warning-on-surface)',
+                    error: 'var(--foreground-error)',
+                    errorOnSurface: 'var(--foreground-error-on-surface)',
+                    link: 'var(--foreground-link)',
                 },
                 accent: {
                     default: 'var(--accent-default)',
@@ -238,21 +238,25 @@ export default {
                             active: 'var(--button-secondary-icon-active)',
                             disabled: 'var(--button-secondary-icon-disabled)',
                         },
-                    }
-                }
+                    },
+                },
             },
             spacing: {
                 ...dimensions.spacing,
                 'Button-s-height': 'var(--button-s-height)',
                 'Button-m-height': 'var(--button-m-height)',
                 'Button-l-height': 'var(--button-l-height)',
-                'Button-xl-label-horizontal': 'var(--button-xl-label-padding-horizontal)',
+                'Button-xl-label-horizontal':
+                    'var(--button-xl-label-padding-horizontal)',
                 'Button-xl-height': 'var(--button-xl-height)',
                 'currency-field-hint': 'var(--currency-field-hint-spacing)',
-                'currency-field-hint-left': 'var(--currency-field-hint-padding-left)',
-                'currency-field-hint-right': 'var(--currency-field-hint-padding-right)',
-                'currency-field-textarea-vertical': 'var(--currency-field-padding-vertical)',
-                'Button-s-label':       'var(--button-s-label-padding-horizontal)',
+                'currency-field-hint-left':
+                    'var(--currency-field-hint-padding-left)',
+                'currency-field-hint-right':
+                    'var(--currency-field-hint-padding-right)',
+                'currency-field-textarea-vertical':
+                    'var(--currency-field-padding-vertical)',
+                'Button-s-label': 'var(--button-s-label-padding-horizontal)',
                 'Button-m-label': 'var(--button-m-label-padding-horizontal)',
                 'Button-l-label': 'var(--button-l-label-padding-horizontal)',
                 'Button-xl-label': 'var(--button-xl-label-padding-horizontal)',
@@ -419,37 +423,63 @@ export default {
                 },
                 'currency-field': {
                     default: 'var(--currency-field-bg-default)',
-                        hover: 'var(--currency-field-bg-focused)',
-                        active: 'var(--currency-field-bg-active)',
-                        disabled: 'var(--currency-field-bg-disabled)',
-                        filled: 'var(--currency-field-bg-filled)',
-                        error: 'var(--currency-field-bg-error)',
+                    hover: 'var(--currency-field-bg-focused)',
+                    active: 'var(--currency-field-bg-active)',
+                    disabled: 'var(--currency-field-bg-disabled)',
+                    filled: 'var(--currency-field-bg-filled)',
+                    error: 'var(--currency-field-bg-error)',
                 },
                 banner: {
-                    'welcome-default': 'var(--banner-welcome-background-default)',
+                    'welcome-default':
+                        'var(--banner-welcome-background-default)',
                     'welcome-active': 'var(--banner-welcome-background-active)',
-                    'welcome-disabled': 'var(--banner-welcome-background-disabled)',
-                    
-                    'earn-rewards-default': 'var(--banner-earn-rewards-background-default)',
-                    'earn-rewards-active': 'var(--banner-earn-rewards-background-active)',
-                    'earn-rewards-disabled': 'var(--banner-earn-rewards-background-disabled)',
-                    
-                    'staking-welcome-default': 'var(--banner-staking-welcome-background-default)',
-                    'staking-welcome-active': 'var(--banner-staking-welcome-background-active)',
-                    'staking-welcome-disabled': 'var(--banner-staking-welcome-background-disabled)',
-                    
-                    'staking-why-stake-default': 'var(--banner-staking-why-stake-background-default)',
-                    'staking-why-stake-active': 'var(--banner-staking-why-stake-background-active)',
-                    'staking-why-stake-disabled': 'var(--banner-staking-why-stake-background-disabled)',
+                    'welcome-disabled':
+                        'var(--banner-welcome-background-disabled)',
+
+                    'earn-rewards-default':
+                        'var(--banner-earn-rewards-background-default)',
+                    'earn-rewards-active':
+                        'var(--banner-earn-rewards-background-active)',
+                    'earn-rewards-disabled':
+                        'var(--banner-earn-rewards-background-disabled)',
+
+                    'staking-welcome-default':
+                        'var(--banner-staking-welcome-background-default)',
+                    'staking-welcome-active':
+                        'var(--banner-staking-welcome-background-active)',
+                    'staking-welcome-disabled':
+                        'var(--banner-staking-welcome-background-disabled)',
+
+                    'staking-why-stake-default':
+                        'var(--banner-staking-why-stake-background-default)',
+                    'staking-why-stake-active':
+                        'var(--banner-staking-why-stake-background-active)',
+                    'staking-why-stake-disabled':
+                        'var(--banner-staking-why-stake-background-disabled)',
                 },
-                'navigation': {
+                navigation: {
                     default: 'var(--navigation-background-default)',
                     hover: 'var(--navigation-background-hover)',
                 },
-                'header': {
+                header: {
                     default: 'var(--header-background-default)',
                     white: 'var(--header-background-white)',
                 },
+                'buy-token-card': {
+                    default: 'var(--card-buy-token-background-default)',
+                    active: 'var(--card-buy-token-background-active)',
+                    disabled: 'var(--card-buy-token-background-disabled)',
+                },
+                'staking-card': {
+                    default: 'var(--staking-card-background-default)',
+                    active: 'var(--staking-card-background-active)',
+                    disabled: 'var(--staking-card-background-disabled)',
+                },
+                chart: {
+                    background: 'var(--chart-background)',
+                    'tab-background': 'var(--chart-tab-background)',
+                    'tab-active': 'var(--chart-tab-active)',
+                }
             },
             textColor: {
                 primary: 'var(--primary-lime-overlay-24)',
@@ -597,34 +627,74 @@ export default {
                     'welcome-default': 'var(--banner-welcome-text-default)',
                     'welcome-active': 'var(--banner-welcome-text-active)',
                     'welcome-disabled': 'var(--banner-welcome-text-disabled)',
-                    
-                    'earn-rewards-default': 'var(--banner-earn-rewards-text-default)',
-                    'earn-rewards-active': 'var(--banner-earn-rewards-text-active)',
-                    'earn-rewards-disabled': 'var(--banner-earn-rewards-text-disabled)',
-                    
-                    'staking-welcome-default': 'var(--banner-staking-welcome-text-default)',
-                    'staking-welcome-active': 'var(--banner-staking-welcome-text-active)',
-                    'staking-welcome-disabled': 'var(--banner-staking-welcome-text-disabled)',
-                    
-                    'staking-why-stake-default': 'var(--banner-staking-why-stake-text-default)',
-                    'staking-why-stake-active': 'var(--banner-staking-why-stake-text-active)',
-                    'staking-why-stake-disabled': 'var(--banner-staking-why-stake-text-disabled)',
+
+                    'earn-rewards-default':
+                        'var(--banner-earn-rewards-text-default)',
+                    'earn-rewards-active':
+                        'var(--banner-earn-rewards-text-active)',
+                    'earn-rewards-disabled':
+                        'var(--banner-earn-rewards-text-disabled)',
+
+                    'staking-welcome-default':
+                        'var(--banner-staking-welcome-text-default)',
+                    'staking-welcome-active':
+                        'var(--banner-staking-welcome-text-active)',
+                    'staking-welcome-disabled':
+                        'var(--banner-staking-welcome-text-disabled)',
+
+                    'staking-why-stake-default':
+                        'var(--banner-staking-why-stake-text-default)',
+                    'staking-why-stake-active':
+                        'var(--banner-staking-why-stake-text-active)',
+                    'staking-why-stake-disabled':
+                        'var(--banner-staking-why-stake-text-disabled)',
                 },
-                'navigation': {
+                navigation: {
                     default: 'var(--navigation-text-default)',
                     hover: 'var(--navigation-text-hover)',
                     icon: {
                         default: 'var(--navigation-icon-default)',
                         hover: 'var(--navigation-icon-hover)',
-                    }
-                   
+                    },
                 },
-                'header': {
+                header: {
                     default: 'var(--header-text-default)',
                     icon: {
                         default: 'var(--header-icon-default)',
                         black: 'var(--header-icon-black)',
-                    }
+                    },
+                },
+                'buy-token-card': {
+                    default: 'var(--card-buy-token-text-default)',
+                    active: 'var(--card-buy-token-text-active)',
+                    disabled: 'var(--card-buy-token-text-disabled)',
+                    icon: {
+                        default: 'var(--card-buy-token-icon-default)',
+                        active: 'var(--card-buy-token-icon-active)',
+                        disabled: 'var(--card-buy-token-icon-disabled)',
+                    },
+                },
+                'staking-card': {
+                    default: 'var(--staking-card-text-default)',
+                    active: 'var(--staking-card-text-active)',
+                    disabled: 'var(--staking-card-text-disabled)',
+                    icon: {
+                        default: 'var(--staking-card-icon-default)',
+                        active: 'var(--staking-card-icon-active)',
+                        disabled: 'var(--staking-card-icon-disabled)',
+                    },
+                },
+                chart: {
+                    default: 'var(--chart-text-default)',
+                    value: 'var(--chart-text-value)',
+                    line: {
+                        state: 'var(--chart-line-state)',
+                        number: 'var(--chart-line-number)',
+                    },
+                    icon: {
+                        default: 'var(--chart-icon-default)',
+                        black: 'var(--chart-icon-black)',
+                    },
                 }
             },
 
@@ -707,14 +777,17 @@ export default {
                     light: 'var(--border-strong)',
                     dark: 'var(--border-strong)',
                 },
-                'navigation': {
+                navigation: {
                     default: 'var(--navigation-border-default)',
                     hover: 'var(--navigation-border-hover)',
                     active: 'var(--navigation-border-active)',
                 },
-                'header': {
+                header: {
                     default: 'var(--header-border-default)',
-                }
+                },
+                chart: {
+                    default: 'var(--chart-border-default)',
+                },
             },
             surfaceColor: {
                 accent: 'var(--surface-accent)',
@@ -781,7 +854,8 @@ export default {
                 'Button-m': dimensions.size.m,
                 'Button-l': dimensions.size.l,
                 'Button-xl': dimensions.size.xl,
-                'currency-field-textarea-height': 'var(--currency-field-height)',
+                'currency-field-textarea-height':
+                    'var(--currency-field-height)',
                 'Navigation-nav': dimensions.spacing['3x'],
                 'Navigation-menu': dimensions.spacing['2x'],
                 Banner: dimensions.spacing['8x'],
@@ -817,9 +891,12 @@ export default {
                 'Button-m': 'var(--button-m-padding-left)',
                 'Button-l': 'var(--button-l-padding-left)',
                 'Button-xl': 'var(--button-xl-padding-left)',
-                'currency-field-textarea-vertical': 'var(--currency-field-padding-vertical)',
-                'currency-field-hint-left': 'var(--currency-field-hint-padding-left)',
-                'currency-field-hint-right': 'var(--currency-field-hint-padding-right)',
+                'currency-field-textarea-vertical':
+                    'var(--currency-field-padding-vertical)',
+                'currency-field-hint-left':
+                    'var(--currency-field-hint-padding-left)',
+                'currency-field-hint-right':
+                    'var(--currency-field-hint-padding-right)',
                 'Banner-text-horizontal': dimensions.spacing['2x'],
                 'Banner-text-vertical': dimensions.spacing['2x'],
                 'Banner-welcome-text': dimensions.spacing['8x'],
@@ -1347,32 +1424,42 @@ export default {
             },
 
             keyframes: {
-                "accordion-down": {
-                  from: { height: "0" },
-                  to: { height: "var(--radix-accordion-content-height)" },
+                'accordion-down': {
+                    from: { height: '0' },
+                    to: { height: 'var(--radix-accordion-content-height)' },
                 },
-                "accordion-up": {
-                  from: { height: "var(--radix-accordion-content-height)" },
-                  to: { height: "0" },
+                'accordion-up': {
+                    from: { height: 'var(--radix-accordion-content-height)' },
+                    to: { height: '0' },
                 },
-              },
-              animation: {
-                "accordion-down": "accordion-down 0.2s ease-out",
-                "accordion-up": "accordion-up 0.2s ease-out",
-              },
+            },
+            animation: {
+                'accordion-down': 'accordion-down 0.2s ease-out',
+                'accordion-up': 'accordion-up 0.2s ease-out',
+            },
         },
         backgroundImage: {
             'radial-gradient':
                 'radial-gradient(151.42% 75% at 50% 50%, rgba(84, 179, 66, 0.22) 0%, rgba(84, 179, 66, 0.00) 100%)',
-            'nav-radial-gradient': 'radial-gradient(131.23% 65% at 50% 50%, rgba(84, 179, 66, 0.48) 0%, rgba(84, 179, 66, 0.00) 100%) radial-gradient(131.23% 65% at 50% 50%,rgba(221, 240, 217, 0.12), rgba(84, 179, 66, 0.12))',
-            'nav-radial-gradient-hover': 'radial-gradient(131.23% 65% at 50% 50%, rgba(84, 179, 66, 0.48) 0%, rgba(84, 179, 66, 0.00) 100%) ',
-            'surface-gradient': 'linear-gradient(113deg, rgba(255, 255, 255, 0.05) 15.05%, rgba(255, 255, 255, 0.08) 84.94%)',
-            'gradinet-surface-linear': 'linear-gradient(113deg, rgba(255, 255, 255, 0.05) 15.05%, rgba(255, 255, 255, 0.08) 84.94%)',
-            'portfolio-info-blur-bg': 'linear-gradient(180deg, rgba(16, 35, 32, 0.32) 0%, #102320 64.64%)',
-            'prop-welcome-banner':'var(--welcome-banner-bg)',
-            'prop-welcome-banner-sm':'var(--welcome-banner-bg-small)',
-            'prop-earn-rewards-banner':'var(--earn-rewards-banner-bg)',
-            'prop-earn-rewards-banner-sm':'var(--earn-rewards-banner-bg-small)',
+            'nav-radial-gradient':
+                'radial-gradient(131.23% 65% at 50% 50%, rgba(84, 179, 66, 0.48) 0%, rgba(84, 179, 66, 0.00) 100%) radial-gradient(131.23% 65% at 50% 50%,rgba(221, 240, 217, 0.12), rgba(84, 179, 66, 0.12))',
+            'nav-radial-gradient-hover':
+                'radial-gradient(131.23% 65% at 50% 50%, rgba(84, 179, 66, 0.48) 0%, rgba(84, 179, 66, 0.00) 100%) ',
+            'surface-gradient':
+                'linear-gradient(113deg, rgba(255, 255, 255, 0.05) 15.05%, rgba(255, 255, 255, 0.08) 84.94%)',
+            'gradinet-surface-linear':
+                'linear-gradient(113deg, rgba(255, 255, 255, 0.05) 15.05%, rgba(255, 255, 255, 0.08) 84.94%)',
+            'portfolio-info-blur-bg':
+                'linear-gradient(180deg, rgba(16, 35, 32, 0.32) 0%, #102320 64.64%)',
+            'prop-welcome-banner': 'var(--welcome-banner-bg)',
+            'prop-welcome-banner-sm': 'var(--welcome-banner-bg-small)',
+            'prop-earn-rewards-banner': 'var(--earn-rewards-banner-bg)',
+            'prop-earn-rewards-banner-sm':
+                'var(--earn-rewards-banner-bg-small)',
+            'buy-token-card-partners': 'var(--buy-token-card-partners)',
+            'buy-token-card-wallets': 'var(--buy-token-card-wallets)',
+            'rwa-card-gradient': 'linear-gradient(0deg, rgba(255, 199, 15, 0.04) -82.34%, rgba(255, 255, 255, 0.00) 27.66%)',
+            'staking-card-multiplier': 'var(--staking-card-multiplier)',
         },
     },
     // eslint-disable-next-line @typescript-eslint/no-require-imports

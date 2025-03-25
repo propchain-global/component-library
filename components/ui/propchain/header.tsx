@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import NavItem from './nav-item';
+import NavItem from '@/components/ui/propchain/nav-item';
 import { LucideLayoutDashboard, LucideWallet } from 'lucide-react';
-import { Button } from '../button';
-import WalletConnectedButton from './wallet-connected-button';
+import { Button } from '@/components/ui/button';
+import WalletConnectedButton from '@/components/ui/propchain/wallet-connected-button';
 type HeaderProps = {
    isWalletConnected: boolean;
    walletAddress?:string;

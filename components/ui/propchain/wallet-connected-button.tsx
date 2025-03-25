@@ -1,5 +1,5 @@
 import React from 'react'
-import { Avatar } from '../avatar'
+import { Avatar } from '@/components/ui/avatar'
 import { LucideChevronDown } from 'lucide-react';
 type WalletConnectedButtonProps = {
    walletAddress: string;

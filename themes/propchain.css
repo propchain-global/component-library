@@ -138,6 +138,9 @@ html[data-theme="propchain"] {
   --foreground-error: var(--system-red-70);
   --foreground-error-on-surface: var(--system-red-90);
   --foreground-link: var(--primary-orange-80);
+  --foreground-placeholder: var(--neutral-grey-80);
+  --foreground-disabled: var(--neutral-grey-60);
+
 
   --border-none: var(--white-none);
   --border-default: var(--neutral-grey-base);
@@ -558,6 +561,11 @@ html[data-theme="propchain"] {
 --earn-rewards-banner-bg: url(/propchain/earn-reward-bg.svg);
 --earn-rewards-banner-bg-small: url(/propchain/earn-reward-bg-small.png);
 
+--buy-token-card-partners: url(/propchain/partners.png);
+--buy-token-card-wallets: url(/propchain/wallets.png);
+
+--staking-card-multiplier: url(/propchain/stake-multiplier.png);
+
 /* Banners */
 --banner-welcome-text-default: var(--foreground-white);
 --banner-welcome-text-active: var(--accent-default);
@@ -600,6 +608,45 @@ html[data-theme="propchain"] {
 --header-sub-overlay-bg: var(--black-16);
 --header-sub-theme-text: var(--foreground-white);
 --header-sub-secondary-text: var(--foreground-white);
+
+/* Cards/Buy Token - Text Color */
+--card-buy-token-text-default: var(--foreground-white);
+--card-buy-token-text-active: var(--accent-default);
+--card-buy-token-text-disabled: var(--foreground-disabled);
+
+--card-buy-token-background-default: var(--background-white);
+--card-buy-token-background-active: var(--background-white);
+--card-buy-token-background-disabled: var(--background-disabled);
+
+--card-buy-token-icon-default: var(--foreground-white);
+--card-buy-token-icon-active: var(--accent-default);
+--card-buy-token-icon-disabled: var(--foreground-disabled);
+
+/* Staking */
+
+--staking-card-text-default: var(--foreground-white);
+--staking-card-text-disabled: var(--foreground-disabled);
+--staking-card-text-active: var(--accent-stronger);
+
+--staking-card-background-default: var(--background-white);
+--staking-card-background-active: var(--background-white);
+--staking-card-background-disabled: var(--background-disabled);
+
+--staking-card-icon-default: var(--foreground-white);
+--staking-card-icon-disabled: var(--foreground-disabled);
+--staking-card-icon-active: var(--accent-default);
+
+/* Chart */
+--chart-text-default: var(--foreground-white);
+--chart-text-value: var(--foreground-placeholder);
+--chart-line-state: var(--foreground-white);
+--chart-line-number: var(--foreground-disabled);
+--chart-background: var(--background-white);
+--chart-tab-background: var(--background-weakest);
+--chart-tab-active: var(--background-primary);
+--chart-icon-default: var(--foreground-white);
+--chart-icon-black: var(--foreground-white);
+--chart-border-default: var(--accent-default);
 
 /* Spacing */
 --spacing-none: 0;
@@ -684,6 +731,9 @@ html[data-theme="propchain"] .dark {
   --foreground-error: var(--system-red-40);
   --foreground-error-on-surface: var(--system-red-60);
   --foreground-link: var(--primary-orange-base);
+  --foreground-placeholder: var(--white-none);
+  --foreground-disabled: var(--white-none);
+
 
   --border-none: var(--black-none);
   --border-default: var(--secondary-navy-50);
@@ -1048,6 +1098,45 @@ html[data-theme="propchain"] .dark {
 --header-sub-overlay-bg: var(--white-16);
 --header-sub-theme-text: var(--foreground-white);
 --header-sub-secondary-text: var(--foreground-white);
+
+/* Cards/Buy Token - Text Color */
+--card-buy-token-text-default: var(--foreground-white);
+--card-buy-token-text-active: var(--accent-default);
+--card-buy-token-text-disabled: var(--foreground-weak);
+
+--card-buy-token-background-default: var(--background-weak);
+--card-buy-token-background-active: var(--background-weak);
+--card-buy-token-background-disabled: var(--background-disabled);
+
+--card-buy-token-icon-default: var(--foreground-white);
+--card-buy-token-icon-active: var(--accent-default);
+--card-buy-token-icon-disabled: var(--foreground-weak);
+
+/* Staking */
+--staking-card-text-default: var(--foreground-white);
+--staking-card-text-disabled: var(--foreground-weak);
+--staking-card-text-active: var(--accent-default);
+
+--staking-card-background-default: var(--background-weak);
+--staking-card-background-active: var(--background-weak);
+--staking-card-background-disabled: var(--background-disabled);
+
+--staking-card-icon-default: var(--foreground-white);
+--staking-card-icon-disabled: var(--foreground-weak);
+--staking-card-icon-active: var(--accent-default);
+
+/* Chart */
+--chart-text-default: var(--foreground-white);
+--chart-text-value: var(--foreground-on-accent);
+--chart-line-state: var(--foreground-white);
+--chart-line-number: var(--foreground-on-accent);
+--chart-background: var(--background-weak);
+--chart-tab-background: var(--background-weaker);
+--chart-tab-active: var(--background-weaker);
+--chart-icon-default: var(--foreground-white);
+--chart-icon-black: var(--foreground-default);
+--chart-border-default: var(--white-none);
+
 }
 
 
