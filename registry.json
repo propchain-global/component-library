@@ -1,0 +1,97 @@
+{
+   "$schema": "https://ui.shadcn.com/schema/registry.json",
+   "name": "Propchain and WELF Component Library",
+   "homepage": "https://welf.com",
+   "items": [
+     {
+      "name": "Button",
+      "type": "registry:ui",
+      "title": "Base Button",
+      "description": "A base button component",
+      "files": [
+         {
+            "path": "components/ui/button.tsx",
+            "label": "Button",
+            "description": "A base button component",
+            "type": "registry:ui"
+         }
+      ]
+     },
+     {
+      "name": "Badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "A badge component",
+      "files": [
+         {
+            "path": "components/ui/badge.tsx",
+            "label": "Badge",
+            "description": "A badge component",
+            "type": "registry:ui"
+         }
+      ]
+     },
+     {
+      "name": "Currency Field",
+      "type": "registry:ui",
+      "title": "Currency Field",
+      "description": "A currency field component",
+      "files": [
+         {
+            "path": "components/ui/currency-field.tsx",
+            "label": "Currency Field",
+            "description": "A currency field component",
+            "type": "registry:ui"
+         }
+      ]
+     },
+     {
+      "name": "Avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "An avatar component",
+      "files": [
+         {
+            "path": "components/ui/avatar.tsx",
+            "label": "Avatar",
+            "description": "An avatar component",
+            "type": "registry:ui"
+         }
+      ]
+     },
+     {
+      "name": "NavItem",
+      "title": "Propchain NavItem",
+      "description": "Single navigation item component",
+      "type": "registry:ui",
+      "files": [
+         {
+            "path": "components/ui/propchain/nav-item.tsx",
+            "target": "components/ui/propchain/nav-item.tsx",
+            "label": "NavItem",
+            "description": "Single navigation item component",
+            "type": "registry:ui"
+         }
+      ]
+     },
+     {
+      "name": "wallet-connected-button",
+      "type": "registry:component",
+      "title": "Propchain Wallet Connected Button",
+      "description": "A wallet connected button component",
+      "files": [
+         {
+            "path": "components/ui/propchain/wallet-connected-button.tsx",
+            "target": "components/ui/propchain/wallet-connected-button.tsx",
+            "label": "Wallet Connected Button",
+            "description": "A wallet connected button component",
+            "type": "registry:component"
+         }
+      ],
+      "registryDependencies": [
+         "avatar"
+      ]
+     }
+   ]
+ }
+ 

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "wallet-connected-button",
+  "type": "registry:component",
+  "title": "Propchain Wallet Connected Button",
+  "description": "A wallet connected button component",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "components/ui/propchain/wallet-connected-button.tsx",
+      "content": "import React from 'react'\nimport { Avatar } from '@/components/ui/avatar'\nimport { LucideChevronDown } from 'lucide-react';\ntype WalletConnectedButtonProps = {\n   walletAddress: string;\n   onClick: () => void;\n}\nexport default function WalletConnectedButton({walletAddress, onClick}: WalletConnectedButtonProps) {\n  return (\n    <div className='flex w-10x md:w-auto items-center px-3x rounded-full h-10x bg-weaker gap-[10px]'>\n      <Avatar size={24} alt=\"Wallet Connected\" />\n      <div className=\"hidden md:flex flex-col \">\n         <p className=\"text-description-l-strong text-header-default\">\n            MetaMask\n         </p>\n         <p className=\"text-description-s max-w-[120px] truncate text-header-default\">\n            {walletAddress?.slice(0, 6)}...{walletAddress?.slice(-4)}\n         </p>\n      </div>  \n      <LucideChevronDown size={24} className='w-4x h-4x text-accent-strong hidden md:block' />\n    \n\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "components/ui/propchain/wallet-connected-button.tsx"
+    }
+  ]
+}

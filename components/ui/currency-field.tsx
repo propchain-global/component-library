@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { Badge } from "./badge";
+import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib";
 
 interface CurrencyFieldProps extends React.ComponentProps<"input"> {

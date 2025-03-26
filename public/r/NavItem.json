@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "NavItem",
+  "type": "registry:ui",
+  "title": "Propchain NavItem",
+  "description": "Single navigation item component",
+  "files": [
+    {
+      "path": "components/ui/propchain/nav-item.tsx",
+      "content": "\n\nimport { cn } from '@/lib';\nimport React from 'react'\ntype NavItemProps = {\n  title: string;\n  Icon: React.ReactNode;\n  isActive?: boolean;\n  href: string;\n  onClick?: () => void;\n  className?: string;\n}\nexport default function NavItem({title, Icon, href, onClick, isActive, className}: NavItemProps) {\n  const stateClass = isActive ? 'bg-accent-strong text-navigation-icon-hover  shadow-[0px_3px_4px_0px_rgba(0,0,0,0.03)]' : 'text-navigation-icon-default';\n  return (\n    <div className={cn(`w-12x h-12x p-3x rounded-full flex items-center justify-center ${stateClass}`, className)} onClick={onClick}>\n      {Icon}\n    </div>\n  )\n}\n",
+      "type": "registry:ui",
+      "target": "components/ui/propchain/nav-item.tsx"
+    }
+  ]
+}

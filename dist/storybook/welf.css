@@ -234,7 +234,7 @@ html[data-theme="welf"] {
   --pill-icon-secondary-neutral: var(--white-100);
 
   /* Pills/Badges - Radius */
---pill-radius: var(--border-radius-custom);
+--pill-radius: var(--border-radius-xs);
 
 /* Pills/Badges - Size */
 --pill-height-s: var(--spacing-5x);
@@ -527,6 +527,12 @@ html[data-theme="welf"] {
    --effect-custom: 999px;
  
    /* Spacing */
+  --spacing-none: 0;
+  --spacing-0-125x: 0.5px;
+  --spacing-px: 1px;
+  --spacing-0-5x: 2px;
+  --spacing-1x: 4px;
+  --spacing-1-5x: 6px;
    --spacing-2x: 8px;
    --spacing-3x: 12px;
    --spacing-4x: 16px;
