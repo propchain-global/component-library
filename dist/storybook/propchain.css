@@ -121,7 +121,7 @@ html[data-theme="propchain"] {
   --accent-default: var(--primary-orange-base);
   --accent-strong: var(--primary-orange-60);
   --accent-stronger: var(--primary-orange-70);
-  --accent-on-white: var(--primary-orange-80);
+  --accent-on-white: var(--primary-orange-60);
   --accent-on-surface: var(--primary-orange-90);
 
   --foreground-default: var(--secondary-navy-70);
@@ -138,6 +138,9 @@ html[data-theme="propchain"] {
   --foreground-error: var(--system-red-70);
   --foreground-error-on-surface: var(--system-red-90);
   --foreground-link: var(--primary-orange-80);
+  --foreground-placeholder: var(--neutral-grey-80);
+  --foreground-disabled: var(--neutral-grey-60);
+
 
   --border-none: var(--white-none);
   --border-default: var(--neutral-grey-base);
@@ -157,13 +160,14 @@ html[data-theme="propchain"] {
   --surface-overlay-white-28: var(--white-28);
 
   --background-default: var(--white-100);
-  --background-weakest: var(--neutral-grey-30);
-  --background-weaker: var(--neutral-grey-40);
+  --background-weakest: var(--primary-orange-overlay-24);
+  --background-weaker: var(--primary-orange-overlay-12);
   --background-weak: var(--primary-orange-overlay-4);
   --background-dark: var(--white-100);
-  --background-inverted: var(--secondary-navy-base);
+  --background-inverted: var(--black-4);
   --background-white: var(--white-100);
-  --background-primary: var(--primary-orange-20);
+  --background-disabled: var(--black-28)
+  --background-primary: var(--primary-orange-base);
   --background-none: var(--white-none);  
 
   --shadow-accent-default: var(--primary-orange-overlay-12);
@@ -477,14 +481,18 @@ html[data-theme="propchain"] {
 --currency-field-hint-padding-right: var(--spacing-4x);
 
 /* Navigation */
---navigation-bg: rgba(255, 255, 255, 0.16);
---navigation-menu-bg: rgba(0, 0, 0, 0);
---navigation-hover-bg: rgba(255, 255, 255, 0.28);
---navigation-active-bg: var(--system-yellow-base);
-
---navigation-icon-default: var(--white-100);
---navigation-icon-hover: var(--white-100);
---navigation-icon-active: var(--black-100);
+--navigation-text-default: var(--foreground-white);
+--navigation-text-hover: var(--foreground-warning-on-surface);
+--navigation-text-active: var(--foreground-inverse);
+--navigation-background-default: var(--background-white);
+--navigation-background-hover: var(--background-white);
+--navigation-background-active: var(--accent-default);
+--navigation-border-default: var(--border-accent);
+--navigation-border-hover: var(--border-accent);
+--navigation-border-active: var(--border-accent);
+--navigation-icon-default: var(--foreground-white);
+--navigation-icon-hover: var(--foreground-default);
+--navigation-icon-active: var(--foreground-inverse);
 
 /* Background Texture */
 --bg-texture-background: #000000;
@@ -505,7 +513,7 @@ html[data-theme="propchain"] {
 --banners-background: var(--white-100);
 --banners-text: var(--black-100);
 --banners-heading: var(--black-100);
---banners-value-proposition: var(--white-100);
+--banners-value-proposition: var(--black-80);
 --banners-icon: var(--white-100);
 --banners-style:var(--white-100);
 
@@ -546,6 +554,99 @@ html[data-theme="propchain"] {
 --effect-large: 32px;
 --effect-xlarge: 64px;
 --effect-custom: 999px;
+
+/* Background Images */
+--welcome-banner-bg: url(/propchain/banner-bg.png);
+--welcome-banner-bg-small: url(/propchain/banner-bg-small.png);
+--earn-rewards-banner-bg: url(/propchain/earn-reward-bg.svg);
+--earn-rewards-banner-bg-small: url(/propchain/earn-reward-bg-small.png);
+
+--buy-token-card-partners: url(/propchain/partners.png);
+--buy-token-card-wallets: url(/propchain/wallets.png);
+
+--staking-card-multiplier: url(/propchain/stake-multiplier.png);
+
+/* Banners */
+--banner-welcome-text-default: var(--foreground-white);
+--banner-welcome-text-active: var(--accent-default);
+--banner-welcome-text-disabled: var(--foreground-placeholder);
+--banner-welcome-background-default: var(--background-white);
+--banner-welcome-background-active: var(--background-white);
+--banner-welcome-background-disabled: var(--background-disabled);
+
+--banner-earn-rewards-text-default: var(--foreground-white);
+--banner-earn-rewards-text-active: var(--accent-default);
+--banner-earn-rewards-text-disabled: var(--foreground-disabled);
+--banner-earn-rewards-background-default: var(--background-white);
+--banner-earn-rewards-background-active: var(--background-weaker);
+--banner-earn-rewards-background-disabled: var(--background-disabled);
+
+--banner-staking-welcome-text-default: var(--foreground-white);
+--banner-staking-welcome-text-active: var(--accent-default);
+--banner-staking-welcome-text-disabled: var(--foreground-disabled);
+--banner-staking-welcome-background-default: var(--background-white);
+--banner-staking-welcome-background-active: var(--background-white);
+--banner-staking-welcome-background-disabled: var(--background-disabled);
+
+--banner-staking-why-stake-text-default: var(--foreground-white);
+--banner-staking-why-stake-text-active: var(--foreground-white);
+--banner-staking-why-stake-text-disabled: var(--foreground-disabled);
+--banner-staking-why-stake-background-default: var(--background-white);
+--banner-staking-why-stake-background-active: var(--background-white);
+--banner-staking-why-stake-background-disabled: var(--background-disabled);
+
+/* Header Components - Light Mode */
+--header-background-default: var(--background-inverted);
+--header-background-white: var(--foreground-white);
+--header-text-default: var(--foreground-white);
+--header-icon-default: var(--foreground-white);
+--header-icon-black: var(--foreground-default);
+--header-border-default: var(--border-accent);
+
+--header-sub-theme-bg: var(--border-strong);
+--header-sub-secondary-bg: var(--black-4);
+--header-sub-overlay-bg: var(--black-16);
+--header-sub-theme-text: var(--foreground-white);
+--header-sub-secondary-text: var(--foreground-white);
+
+/* Cards/Buy Token - Text Color */
+--card-buy-token-text-default: var(--foreground-white);
+--card-buy-token-text-active: var(--accent-default);
+--card-buy-token-text-disabled: var(--foreground-disabled);
+
+--card-buy-token-background-default: var(--background-white);
+--card-buy-token-background-active: var(--background-white);
+--card-buy-token-background-disabled: var(--background-disabled);
+
+--card-buy-token-icon-default: var(--foreground-white);
+--card-buy-token-icon-active: var(--accent-default);
+--card-buy-token-icon-disabled: var(--foreground-disabled);
+
+/* Staking */
+
+--staking-card-text-default: var(--foreground-white);
+--staking-card-text-disabled: var(--foreground-disabled);
+--staking-card-text-active: var(--accent-stronger);
+
+--staking-card-background-default: var(--background-white);
+--staking-card-background-active: var(--background-white);
+--staking-card-background-disabled: var(--background-disabled);
+
+--staking-card-icon-default: var(--foreground-white);
+--staking-card-icon-disabled: var(--foreground-disabled);
+--staking-card-icon-active: var(--accent-default);
+
+/* Chart */
+--chart-text-default: var(--foreground-white);
+--chart-text-value: var(--foreground-placeholder);
+--chart-line-state: var(--foreground-white);
+--chart-line-number: var(--foreground-disabled);
+--chart-background: var(--background-white);
+--chart-tab-background: var(--background-weakest);
+--chart-tab-active: var(--background-primary);
+--chart-icon-default: var(--foreground-white);
+--chart-icon-black: var(--foreground-white);
+--chart-border-default: var(--accent-default);
 
 /* Spacing */
 --spacing-none: 0;
@@ -616,12 +717,12 @@ html[data-theme="propchain"] .dark {
   --accent-on-white: var(--primary-orange-20);
   --accent-on-surface: var(--primary-orange-100);
 
-  --foreground-default: var(--white-100);
-  --foreground-on-accent: var(--white-80);
-  --foreground-weak: var(--white-100);
-  --foreground-weaker: var(--secondary-navy-10);
-  --foreground-weakest: var(--secondary-navy-30);
-  --foreground-inverse: var(--secondary-navy-base);
+  --foreground-default: var(--black-100);
+  --foreground-on-accent: var(--black-80);
+  --foreground-weak: var(--white-50);
+  --foreground-weaker: var(--white-28);
+  --foreground-weakest: var(--white-16);
+  --foreground-inverse: var(--white-4);
   --foreground-success: var(--system-green-30);
   --foreground-success-on-surface: var(--system-green-base);
   --foreground-warning: var(--system-yellow-40);
@@ -630,6 +731,9 @@ html[data-theme="propchain"] .dark {
   --foreground-error: var(--system-red-40);
   --foreground-error-on-surface: var(--system-red-60);
   --foreground-link: var(--primary-orange-base);
+  --foreground-placeholder: var(--white-none);
+  --foreground-disabled: var(--white-none);
+
 
   --border-none: var(--black-none);
   --border-default: var(--secondary-navy-50);
@@ -637,20 +741,20 @@ html[data-theme="propchain"] .dark {
   --border-strongest: var(--secondary-navy-20);
   --border-accent: var(--primary-orange-50);
 
-  --surface-accent: var(--primary-orange-overlay-50);
-  --surface-default: var(--secondary-navy-50);
-  --surface-disabled: var(--secondary-navy-20);
+  --surface-accent: var(--primary-orange-base);
+  --surface-default: var(--primary-orange-overlay-4);
+  --surface-disabled: var(--white-none);
   --surface-overlay-white-50: var(--black-50);
   --surface-overlay-white-28: var(--black-28);
 
-  --background-default: var(--secondary-navy-70);
-  --background-weakest: var(--secondary-navy-60);
-  --background-weaker: var(--secondary-navy-base);
-  --background-weak: var(--secondary-navy-60);
+  --background-default: var(--black-100);
+  --background-weakest: var(--primary-orange-overlay-24);
+  --background-weaker: var(--primary-orange-overlay-12);
+  --background-weak: var(--primary-orange-overlay-4);
   --background-dark: var(--black-100);
-  --background-inverted: var(--white-100);
+  --background-inverted: var(--white-4);
   --background-none: var(--black-none);
-
+  --background-disabled: var(--white-100)
   --shadow-accent-default: var(--primary-orange-overlay-24);
   --shadow-accent-weak: var(--primary-orange-overlay-12);
   --shadow-secondary-default: var(--secondary-navy-overlay-24);
@@ -867,14 +971,18 @@ html[data-theme="propchain"] .dark {
 --currency-field-hint-padding-right: var(--spacing-4x);
 
   /* Navigation Dark Mode */
-  --navigation-bg: rgba(255, 255, 255, 0.16);
-  --navigation-menu-bg: rgba(0, 0, 0, 0);
-  --navigation-hover-bg: rgba(255, 255, 255, 0.28);
-  --navigation-active-bg: var(--system-yellow-base);
-
-  --navigation-icon-default: var(--white-100);
-  --navigation-icon-hover: var(--white-100);
-  --navigation-icon-active: var(--black-100);
+  --navigation-text-default: var(--foreground-white);
+  --navigation-text-hover: var(--foreground-link);
+  --navigation-text-active: var(--foreground-on-accent);
+  --navigation-background-default: var(--background-primary);
+  --navigation-background-hover: var(--background-weak);
+  --navigation-background-active: var(--accent-default);
+  --navigation-border-default: var(--white-none);
+  --navigation-border-hover: var(--background-weak);
+  --navigation-border-active: var(--border-accent);
+  --navigation-icon-default: var(--foreground-white);
+  --navigation-icon-hover: var(--foreground-default);
+  --navigation-icon-active: var(--foreground-on-accent);
 
   /* Background Texture Dark Mode */
   --bg-texture-background: #000000;
@@ -892,7 +1000,7 @@ html[data-theme="propchain"] .dark {
   --banners-background: var(--system-yellow-overlay-4);
   --banners-text: var(--white-100);
   --banners-heading: var(--white-80);
-  --banners-value-proposition: var(--primary-orange-base);
+  --banners-value-proposition: var(--white-80);
   --banners-icon: var(--primary-orange-base);
   --banners-style: var(--primary-orange-base);
 
@@ -944,6 +1052,91 @@ html[data-theme="propchain"] .dark {
   --button-secondary-accent-bg-active: var(--shadow-accent-weak);
   --button-secondary-accent-bg-hover: var(--shadow-accent-weak);
   --button-secondary-accent-bg-default: var(--background-none);
+
+  /* Banners - Dark Mode */
+  --banner-welcome-text-default: var(--foreground-white);
+  --banner-welcome-text-active: var(--accent-default);
+  --banner-welcome-text-disabled: var(--foreground-weak);
+  --banner-welcome-background-default: var(--background-weak);
+  --banner-welcome-background-active: var(--background-weak);
+  --banner-welcome-background-disabled: var(--background-disabled);
+
+  --banner-earn-rewards-text-default: var(--foreground-white);
+  --banner-earn-rewards-text-active: var(--accent-default);
+  --banner-earn-rewards-text-disabled: var(--foreground-disabled);
+  --banner-earn-rewards-background-default: var(--background-weak);
+  --banner-earn-rewards-background-active: var(--background-weak);
+  --banner-earn-rewards-background-disabled: var(--background-disabled);
+
+  --banner-staking-welcome-text-default: var(--white-100);
+  --banner-staking-welcome-text-active: var(--accent-default);
+  --banner-staking-welcome-text-disabled: var(--foreground-weak);
+  --banner-staking-welcome-background-default: var(--background-weak);
+  --banner-staking-welcome-background-active: var(--background-weak);
+  --banner-staking-welcome-background-disabled: var(--background-disabled);
+
+  --banner-staking-why-stake-text-default: var(--foreground-white);
+  --banner-staking-why-stake-text-active: var(--accent-default);
+  --banner-staking-why-stake-text-disabled: var(--foreground-weak);
+  --banner-staking-why-stake-background-default: var(--background-weak);
+  --banner-staking-why-stake-background-active: var(--background-weak);
+  --banner-staking-why-stake-background-disabled: var(--background-disabled);
+
+  /* Header Components - Dark Mode */
+  --header-background-default: var(--background-weak);
+  --header-background-white: var(--white-16);
+  
+  --header-text-default: var(--foreground-white);
+  
+  --header-icon-default: var(--foreground-white);
+  --header-icon-black: var(--foreground-default);
+  
+  --header-border-default: var(--border-none);
+
+  --header-sub-theme-bg: var(--white-4);
+--header-sub-secondary-bg: var(--white-4);
+--header-sub-overlay-bg: var(--white-16);
+--header-sub-theme-text: var(--foreground-white);
+--header-sub-secondary-text: var(--foreground-white);
+
+/* Cards/Buy Token - Text Color */
+--card-buy-token-text-default: var(--foreground-white);
+--card-buy-token-text-active: var(--accent-default);
+--card-buy-token-text-disabled: var(--foreground-weak);
+
+--card-buy-token-background-default: var(--background-weak);
+--card-buy-token-background-active: var(--background-weak);
+--card-buy-token-background-disabled: var(--background-disabled);
+
+--card-buy-token-icon-default: var(--foreground-white);
+--card-buy-token-icon-active: var(--accent-default);
+--card-buy-token-icon-disabled: var(--foreground-weak);
+
+/* Staking */
+--staking-card-text-default: var(--foreground-white);
+--staking-card-text-disabled: var(--foreground-weak);
+--staking-card-text-active: var(--accent-default);
+
+--staking-card-background-default: var(--background-weak);
+--staking-card-background-active: var(--background-weak);
+--staking-card-background-disabled: var(--background-disabled);
+
+--staking-card-icon-default: var(--foreground-white);
+--staking-card-icon-disabled: var(--foreground-weak);
+--staking-card-icon-active: var(--accent-default);
+
+/* Chart */
+--chart-text-default: var(--foreground-white);
+--chart-text-value: var(--foreground-on-accent);
+--chart-line-state: var(--foreground-white);
+--chart-line-number: var(--foreground-on-accent);
+--chart-background: var(--background-weak);
+--chart-tab-background: var(--background-weaker);
+--chart-tab-active: var(--background-weaker);
+--chart-icon-default: var(--foreground-white);
+--chart-icon-black: var(--foreground-default);
+--chart-border-default: var(--white-none);
+
 }
 
 

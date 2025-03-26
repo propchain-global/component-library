@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "Badge",
+  "type": "registry:ui",
+  "title": "Badge",
+  "description": "A badge component",
+  "files": [
+    {
+      "path": "components/ui/badge.tsx",
+      "content": "import * as React from \"react\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst badgeVariants = cva(\n  \"inline-flex items-center rounded-Pills transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300\",\n  {\n    variants: {\n      variant: {\n        'primary-info': \" bg-pills-primary-information text-pills-primary-information\",\n        'primary-warning': \" bg-pills-primary-warning text-pills-primary-warning\",\n        'primary-success': \" bg-pills-primary-success text-pills-primary-success\",\n        'primary-error': \" bg-pills-primary-error text-pills-primary-error\",\n        'primary-neutral': \" bg-pills-primary-neutral text-pills-primary-neutral\",\n        'secondary-info': \" bg-pills-secondary-information text-pills-secondary-information\",\n        'secondary-warning': \" bg-pills-secondary-warning text-pills-secondary-warning\",\n        'secondary-success': \" bg-pills-secondary-success text-pills-secondary-success\",\n        'secondary-error': \" bg-pills-secondary-error text-pills-secondary-error\",\n        'secondary-neutral': \" bg-pills-secondary-neutral text-pills-secondary-neutral\",\n      },\n      \n      size: {\n        s: \"h-Pills-s px-1x gap-0.5x text-description-s-medium\",\n        l: \"h-Pills-l px-1.5x gap-1x text-description-l-medium\",\n      }\n    },\n    defaultVariants: {\n      variant: \"primary-info\",\n      size: \"s\",\n    },\n    \n  }\n)\n\nexport interface BadgeProps\n  extends React.HTMLAttributes<HTMLDivElement>,\n    VariantProps<typeof badgeVariants> {}\n\nfunction Badge({ className, variant, size, ...props }: BadgeProps) {\n  return (\n    <div className={cn(badgeVariants({ variant, size }), className)} {...props} />\n  )\n}\n\nexport { Badge, badgeVariants }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

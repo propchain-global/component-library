@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "Currency Field",
+  "type": "registry:ui",
+  "title": "Currency Field",
+  "description": "A currency field component",
+  "files": [
+    {
+      "path": "components/ui/currency-field.tsx",
+      "content": "import * as React from \"react\"\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { cn } from \"@/lib\";\n\ninterface CurrencyFieldProps extends React.ComponentProps<\"input\"> {\n error?: boolean;\n label?: string;\n balance?: number;\n token?: string;\n \n}\n\n\n\n\nconst CurrencyField = React.forwardRef<HTMLInputElement, CurrencyFieldProps>(\n  ({  type, label, balance, token=\"WELF\", ...props }, ref) => {\n    const containerClass = React.useMemo(() => {\n      if (props.error) return \"!border-currency-field-border-error bg-currency-field-error\"\n      if (props.disabled) return \"border-currency-field-border-disabled bg-currency-field-disabled\"\n      return \"border-currency-field-border-default\"\n    }, [props.error, props.disabled])\n    const inputClass = React.useMemo(() => {\n      if (props.error) return \"text-currency-field-help-error\"\n      if (props.disabled) return \"text-currency-field-disabled bg-currency-field-disabled\"\n      return \"text-currency-field-value\"\n    }, [props.error, props.disabled])\n    return (\n      <div className={cn( \"flex flex-col w-full h-currency-field-textarea-height px-currency-field-hint-left justify-center  gap-currency-field-textarea-vertical rounded-currency-field-radius  border-currency-field-border-default border-currency-field-border bg-currency-field-default  focus-within:border-currency-field-border-active \", containerClass)}>\n        <div className=\"flex justify-between \">\n            <p className=\"text-currency-field-label text-body-s-medium\">{label}</p>\n            <p className=\"text-currency-field-balanceDefault text-body-s-medium\"><span className=\"text-currency-field-balance\">Bal:</span> {balance?.toLocaleString()} {token}</p>\n        </div>\n\n        <div className=\"flex justify-between items-center\">\n      <input\n        type={type}\n        className={\n         \"text-number-s w-full placeholder:text-currency-field-placeholder  focus:outline-none bg-transparent \" + inputClass\n        }\n        ref={ref}\n        {...props}\n      />\n      <Badge variant=\"primary-info\" size=\"l\">MAX</Badge>\n      </div>\n      </div>\n    )\n  }\n)\nCurrencyField.displayName = \"CurrencyField\"\n\nexport { CurrencyField }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

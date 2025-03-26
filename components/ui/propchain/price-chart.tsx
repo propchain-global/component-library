@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge } from '../badge';
+import { Badge } from '@/components/ui/badge';
 import {
     LucideArrowUpRight,
     LucideCloudDrizzle,
@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import { AreaChartComponent } from './area-chart';
+import { AreaChartComponent } from '@/components/ui/propchain/area-chart';
 const tabs = ['Day', 'Week', 'Month', 'Year'] as const;
 type Tab = (typeof tabs)[number];
 export interface PriceChartProps {
